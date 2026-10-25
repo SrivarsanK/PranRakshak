@@ -1,2 +1,8 @@
 # Local document-review renders and temporary verification files
 /tmp/
+
+# KiCad local settings, locks, and editor recovery files
+*.kicad_prl
+*.lck
+_autosave-*.kicad_sch
+**/*-backups/

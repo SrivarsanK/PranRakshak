@@ -1,0 +1,1056 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T20:40:05",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/bdbe4983-6a79-40e3-88d4-9c4f1a77e41f",
+            "violations": [
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R1 [R]",
+                            "pos": {
+                                "x": 45.72,
+                                "y": 156.21
+                            },
+                            "uuid": "9d790207-d494-486c-af87-1864b2cc5a8a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R2 [R]",
+                            "pos": {
+                                "x": 45.72,
+                                "y": 196.85
+                            },
+                            "uuid": "8b39f6cb-5e6b-485d-a204-45b66452ec4e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C]",
+                            "pos": {
+                                "x": 86.36,
+                                "y": 156.21
+                            },
+                            "uuid": "57f02de8-0dcb-43a7-8666-4b9d1fe13ce1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R3 [R]",
+                            "pos": {
+                                "x": 128.27,
+                                "y": 196.85
+                            },
+                            "uuid": "30f384b6-0b96-4819-ac41-8e02e37f7b9f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [C]",
+                            "pos": {
+                                "x": 166.37,
+                                "y": 156.21
+                            },
+                            "uuid": "abe6b040-cc26-4710-843c-52f3b9dad8e8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [C]",
+                            "pos": {
+                                "x": 166.37,
+                                "y": 196.85
+                            },
+                            "uuid": "bb2187d6-61a4-4a80-8bbc-38949fbfc100"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R6 [R]",
+                            "pos": {
+                                "x": 243.84,
+                                "y": 161.29
+                            },
+                            "uuid": "4b6377c6-9a10-48a3-8f28-44af3de69b5a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (USB*Micro*B*)",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [USB_B_Micro_SelfPowered]",
+                            "pos": {
+                                "x": 261.62,
+                                "y": 63.5
+                            },
+                            "uuid": "970bf854-6f8c-48ca-b1ca-57aefcf768be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R7 [R]",
+                            "pos": {
+                                "x": 287.02,
+                                "y": 161.29
+                            },
+                            "uuid": "f21c415b-f8e8-4b08-928b-72ada065ee5f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C4 [C]",
+                            "pos": {
+                                "x": 330.2,
+                                "y": 161.29
+                            },
+                            "uuid": "c82304c0-4d54-4757-81ab-d0950f438859"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R4 [R]",
+                            "pos": {
+                                "x": 331.47,
+                                "y": 44.45
+                            },
+                            "uuid": "1263e1d8-f0aa-4183-a743-81ab408bf4ad"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R5 [R]",
+                            "pos": {
+                                "x": 369.57,
+                                "y": 44.45
+                            },
+                            "uuid": "3ae8d2e1-09cf-4b16-b996-98b3d4b1e73a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J3 [Conn_01x02]",
+                            "pos": {
+                                "x": 40.64,
+                                "y": 138.43
+                            },
+                            "uuid": "ed85abbe-7e6a-4187-937e-893569ea097e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C5 [C]",
+                            "pos": {
+                                "x": 43.18,
+                                "y": 207.01
+                            },
+                            "uuid": "97ab7a63-0ef2-4609-a482-88503075ab9d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [Conn_01x03]",
+                            "pos": {
+                                "x": 58.42,
+                                "y": 48.26
+                            },
+                            "uuid": "4556b10f-5055-460e-b61d-7f0bdce2ee80"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (*Fuse*)",
+                    "items": [
+                        {
+                            "description": "Symbol F2 [Fuse]",
+                            "pos": {
+                                "x": 81.28,
+                                "y": 135.89
+                            },
+                            "uuid": "7ef4bcfa-b7fe-47f1-b328-da7e03baea4c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C6 [C]",
+                            "pos": {
+                                "x": 83.82,
+                                "y": 207.01
+                            },
+                            "uuid": "5a40a443-d524-422d-81e8-7ba449a94d45"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (*Fuse*)",
+                    "items": [
+                        {
+                            "description": "Symbol F1 [Fuse]",
+                            "pos": {
+                                "x": 120.65,
+                                "y": 44.45
+                            },
+                            "uuid": "f707f92f-702b-4c0b-b2d7-2b31be2f2b82"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R8 [R]",
+                            "pos": {
+                                "x": 181.61,
+                                "y": 147.32
+                            },
+                            "uuid": "24082499-56fb-4d2d-a884-3068cbc2d41b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R9 [R]",
+                            "pos": {
+                                "x": 181.61,
+                                "y": 189.23
+                            },
+                            "uuid": "90d72846-0477-4127-9b93-0a218db10c8d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C11 [C]",
+                            "pos": {
+                                "x": 228.6,
+                                "y": 231.14
+                            },
+                            "uuid": "709aa9c2-be05-434a-bbed-1a416226631a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C7 [C]",
+                            "pos": {
+                                "x": 241.3,
+                                "y": 54.61
+                            },
+                            "uuid": "f63f5da2-6596-40ba-8f9c-624a84956a3d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C8 [C]",
+                            "pos": {
+                                "x": 241.3,
+                                "y": 100.33
+                            },
+                            "uuid": "34be3b79-1852-4059-8331-ac18daac1981"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (SOT?223* TO?263* TO?252* TO?220*)",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [LDL1117S33R]",
+                            "pos": {
+                                "x": 271.78,
+                                "y": 218.44
+                            },
+                            "uuid": "cdc9b9d9-72bd-4781-825a-7596e766a60e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C9 [C]",
+                            "pos": {
+                                "x": 279.4,
+                                "y": 100.33
+                            },
+                            "uuid": "51076242-b4e4-43a6-9502-3bde03bded00"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R10 [R]",
+                            "pos": {
+                                "x": 326.39,
+                                "y": 100.33
+                            },
+                            "uuid": "4ddcd853-cbdd-480f-bfd5-d94b54b2814c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R11 [R]",
+                            "pos": {
+                                "x": 326.39,
+                                "y": 142.24
+                            },
+                            "uuid": "989fb882-085c-45af-835c-0dc068c7fcd2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C12 [C]",
+                            "pos": {
+                                "x": 331.47,
+                                "y": 222.25
+                            },
+                            "uuid": "aa1d70de-a346-45e0-8d5a-73d2f19904e2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Choke_* *Coil* Inductor_* L_*)",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [L]",
+                            "pos": {
+                                "x": 359.41,
+                                "y": 34.29
+                            },
+                            "uuid": "a0fefb2b-6937-4543-a69f-75b516267df7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Potentiometer*)",
+                    "items": [
+                        {
+                            "description": "Symbol RV1 [R_Potentiometer]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 100.33
+                            },
+                            "uuid": "7cd7d180-d5f5-449b-a0ff-4cb4310e189b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C10 [C]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 142.24
+                            },
+                            "uuid": "2a665a7a-fc9c-496b-b5a2-01f4405dc687"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R12 [R]",
+                            "pos": {
+                                "x": 375.92,
+                                "y": 222.25
+                            },
+                            "uuid": "31df16b5-6413-446c-9b97-da43ece14deb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R13 [R]",
+                            "pos": {
+                                "x": 30.48,
+                                "y": 93.98
+                            },
+                            "uuid": "67ec651e-8900-4db2-b0af-a943a6c745fe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R16 [R]",
+                            "pos": {
+                                "x": 30.48,
+                                "y": 240.03
+                            },
+                            "uuid": "177f58f6-282e-410c-9295-f55282dbb2bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R14 [R]",
+                            "pos": {
+                                "x": 80.01,
+                                "y": 93.98
+                            },
+                            "uuid": "1cb038c0-7c5a-4bac-a5d6-f80c3996f8db"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R17 [R]",
+                            "pos": {
+                                "x": 80.01,
+                                "y": 240.03
+                            },
+                            "uuid": "9fc7e6b1-7359-437b-ae99-706d56216d4c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R15 [R]",
+                            "pos": {
+                                "x": 127.0,
+                                "y": 93.98
+                            },
+                            "uuid": "baa57fc8-3ddc-4edd-920a-12f6f450742f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R18 [R]",
+                            "pos": {
+                                "x": 127.0,
+                                "y": 240.03
+                            },
+                            "uuid": "3ba39d00-acd8-40ee-889d-63ade3ff371d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C13 [C]",
+                            "pos": {
+                                "x": 173.99,
+                                "y": 93.98
+                            },
+                            "uuid": "6ec3a316-a431-40dd-93c0-9e7d48ac38a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C14 [C]",
+                            "pos": {
+                                "x": 173.99,
+                                "y": 240.03
+                            },
+                            "uuid": "cd7c8530-cfd9-4873-9a70-719d171a95b5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C15 [C]",
+                            "pos": {
+                                "x": 228.6,
+                                "y": 87.63
+                            },
+                            "uuid": "f43dbaae-ada6-4490-be1e-9f4c3c6b7d1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (SOT?223* TO?263* TO?252* TO?220*)",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TLV1117-15]",
+                            "pos": {
+                                "x": 259.08,
+                                "y": 43.18
+                            },
+                            "uuid": "aa8ab553-b79f-4c32-812f-396ad18b07a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J4 [Conn_01x03]",
+                            "pos": {
+                                "x": 265.43,
+                                "y": 223.52
+                            },
+                            "uuid": "bbabf75d-93c1-462d-8649-383f3ca19d8c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C16 [C]",
+                            "pos": {
+                                "x": 271.78,
+                                "y": 87.63
+                            },
+                            "uuid": "9ffc0c7e-adae-4496-bde9-a2b6a5f914b6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R21 [R]",
+                            "pos": {
+                                "x": 314.96,
+                                "y": 139.7
+                            },
+                            "uuid": "e3192ed1-50ef-41de-be08-cb5ebabff2f4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R23 [R]",
+                            "pos": {
+                                "x": 314.96,
+                                "y": 223.52
+                            },
+                            "uuid": "bd6f9342-fede-4a23-b5a9-bf0dca823646"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R19 [R]",
+                            "pos": {
+                                "x": 316.23,
+                                "y": 87.63
+                            },
+                            "uuid": "e0ba0dba-fdb6-4c48-aa6e-c9afdd1042c9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R20 [R]",
+                            "pos": {
+                                "x": 355.6,
+                                "y": 99.06
+                            },
+                            "uuid": "772f72c7-0890-45d3-a185-f3e9b714e90e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R24 [R]",
+                            "pos": {
+                                "x": 355.6,
+                                "y": 223.52
+                            },
+                            "uuid": "8890d1e4-f866-482f-acd5-8a5e4cd37899"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R22 [R]",
+                            "pos": {
+                                "x": 364.49,
+                                "y": 139.7
+                            },
+                            "uuid": "5baf85b0-388b-400f-8f5e-6693dd8f248b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (TO-???* *_Diode_* *SingleDiode* D_*)",
+                    "items": [
+                        {
+                            "description": "Symbol D1 [D_Schottky]",
+                            "pos": {
+                                "x": 394.97,
+                                "y": 99.06
+                            },
+                            "uuid": "6da2effc-2236-4a6a-b053-0bd182aa55d0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C17 [C]",
+                            "pos": {
+                                "x": 396.24,
+                                "y": 223.52
+                            },
+                            "uuid": "1681fb9a-58bf-4ced-9318-8bb290eb238f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C20 [C]",
+                            "pos": {
+                                "x": 39.37,
+                                "y": 226.06
+                            },
+                            "uuid": "41f1075c-81a2-4554-bc7d-f7c1206588e7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J5 [Conn_01x05]",
+                            "pos": {
+                                "x": 62.23,
+                                "y": 50.8
+                            },
+                            "uuid": "0d75be92-89f2-420c-b3e6-3722bc192406"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C21 [C]",
+                            "pos": {
+                                "x": 87.63,
+                                "y": 226.06
+                            },
+                            "uuid": "5217f2cf-48ac-442f-83b6-aaf3560a98f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C18 [C]",
+                            "pos": {
+                                "x": 120.65,
+                                "y": 48.26
+                            },
+                            "uuid": "f99d3c4b-3e37-4f4f-8831-ebc925a31374"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C22 [C]",
+                            "pos": {
+                                "x": 135.89,
+                                "y": 226.06
+                            },
+                            "uuid": "2ced538f-7cf5-4fdc-9138-7bdf0fc0cbfd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C19 [C]",
+                            "pos": {
+                                "x": 168.91,
+                                "y": 48.26
+                            },
+                            "uuid": "ae9a1f1d-2344-44cb-af6d-07d7c96330a2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R27 [R]",
+                            "pos": {
+                                "x": 240.03,
+                                "y": 166.37
+                            },
+                            "uuid": "d3d5f5d5-d5b0-4afc-b5ed-1a2c7fd51ab8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J8 [Conn_01x02]",
+                            "pos": {
+                                "x": 248.92,
+                                "y": 219.71
+                            },
+                            "uuid": "8f6a5af7-973e-4448-b17e-a5aa93595778"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J6 [Conn_01x04]",
+                            "pos": {
+                                "x": 262.89,
+                                "y": 48.26
+                            },
+                            "uuid": "79f34f03-ca4a-496c-8f1c-64b2cb20c992"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (Connector*:*_1x??_*)",
+                    "items": [
+                        {
+                            "description": "Symbol J7 [Conn_01x04]",
+                            "pos": {
+                                "x": 262.89,
+                                "y": 99.06
+                            },
+                            "uuid": "1dc325da-f4b1-4eb2-b0bb-f1e26c7ef152"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R25 [R]",
+                            "pos": {
+                                "x": 318.77,
+                                "y": 44.45
+                            },
+                            "uuid": "59a9cc61-f067-46e7-8b11-71714a43ab49"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (C_*)",
+                    "items": [
+                        {
+                            "description": "Symbol C23 [C]",
+                            "pos": {
+                                "x": 328.93,
+                                "y": 166.37
+                            },
+                            "uuid": "1030b45e-d38d-4c86-9bc7-5ad824b14797"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (TO-???* *_Diode_* *SingleDiode* D_*)",
+                    "items": [
+                        {
+                            "description": "Symbol D2 [D_Schottky]",
+                            "pos": {
+                                "x": 364.49,
+                                "y": 214.63
+                            },
+                            "uuid": "c9e71399-9c71-43db-b8f1-5b3cb1b4efb8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R28 [R]",
+                            "pos": {
+                                "x": 364.49,
+                                "y": 234.95
+                            },
+                            "uuid": "9b8c35ba-31a0-44a4-96b8-15bad5f49138"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R26 [R]",
+                            "pos": {
+                                "x": 370.84,
+                                "y": 44.45
+                            },
+                            "uuid": "a35ef70a-1a36-4e0a-be4b-bcb1b111c563"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                },
+                {
+                    "description": "Assigned footprint () doesn't match footprint filters (R_*)",
+                    "items": [
+                        {
+                            "description": "Symbol R29 [R]",
+                            "pos": {
+                                "x": 405.13,
+                                "y": 234.95
+                            },
+                            "uuid": "179ef151-d1f3-483b-b106-c3edce198b41"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_filter"
+                }
+            ]
+        },
+        {
+            "path": "/Protected battery, chargi/",
+            "uuid_path": "/bdbe4983-6a79-40e3-88d4-9c4f1a77e41f/901d20a7-b242-41c6-a85f-c29fb1245dfb",
+            "violations": []
+        },
+        {
+            "path": "/Gas sensor conditioning a/",
+            "uuid_path": "/bdbe4983-6a79-40e3-88d4-9c4f1a77e41f/e426800a-da98-40df-8a98-a38c8f02bb57",
+            "violations": []
+        },
+        {
+            "path": "/Dust, motion, display, pa/",
+            "uuid_path": "/bdbe4983-6a79-40e3-88d4-9c4f1a77e41f/f5a50b1c-e798-43aa-a644-1c70c989ee54",
+            "violations": []
+        }
+    ],
+    "source": "PRAN_RAKSHAK.kicad_sch"
+}

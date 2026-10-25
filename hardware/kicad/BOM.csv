@@ -1,0 +1,82 @@
+﻿Reference,Value,MPN,Footprint,Sheet,Status,Notes
+U1,ESP32-C3-WROOM-02-N4,ESP32-C3-WROOM-02-N4,RF_Module:ESP32-C3-WROOM-02,PRAN_RAKSHAK.kicad_sch,"Named in PDF pp9,13",
+R1,10k,10k 1% 0603,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+C1,1u 10V,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+SW1,RESET,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+R2,10k,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+SW2,BOOT,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+R3,10k,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+C2,100n 10V,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+C3,22u 10V X7R,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+J1,USB DEBUG ONLY,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,VBUS deliberately not connected; use powered RUN node. USB shield bonded to circuit ground.
+R4,22R,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+R5,22R,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+R6,150k 0.1%,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+R7,100k 0.1%,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+C4,100n 10V,,,PRAN_RAKSHAK.kicad_sch,Proposed implementation,
+J2,PROTECTED PACK 2500mAh,"Protected 1S 2500mAh LiPo, 10k B3435 NTC",,Power.kicad_sch,Capacity specified; protection and NTC proposed,"Pack must provide over/under-voltage, short-circuit protection and >=3A discharge. Pin3 NTC thermally bonded to cell."
+F1,3A fast fuse,Littelfuse 0451003.MRL,,Power.kicad_sch,Proposed implementation,Routine overcurrent protection only; no intrinsic safety claim.
+SW3,CHARGE / RUN,Break-before-make SPDT >=3A DC,,Power.kicad_sch,Proposed implementation,Pin1 common. Pin2 charge. Pin3 run. Confirm chosen switch physical terminal mapping.
+J3,5V CHARGE INPUT,,,Power.kicad_sch,Proposed implementation,"Regulated 5.0V +/-5%, current limited >=0.5A; keyed input. Not a USB-C connector."
+F2,0.5A input fuse,0.5A fast fuse,,Power.kicad_sch,Proposed implementation,
+U2,TP4056-42-ESOP8,TP4056-42-ESOP8,Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias,Power.kicad_sch,TP4056 specified; discrete implementation proposed,Bare IC implemented. Status pins intentionally unused. Exposed pad tied to GND.
+R8,6.04k 1%,,,Power.kicad_sch,Proposed implementation,About 182mA for the retrieved TOPPOWER 1100/RPROG law; some TP4056 revisions use 1200/RPROG (~199mA). Verify procured IC datasheet/current.
+R9,6.8k 1%,,,Power.kicad_sch,Proposed implementation,"Assumes 10k B3435 NTC cell pack, nominal ~1 to 41 C window with 0.8/0.45 thresholds. Exact IC/NTC tolerances must be qualified; TEMP short disables sensing."
+C5,10u 10V,,,Power.kicad_sch,Proposed implementation,
+C6,10u 10V,,,Power.kicad_sch,Proposed implementation,
+U3,TPS61023DRLR,TPS61023DRLR,Package_TO_SOT_SMD:SOT-563,Power.kicad_sch,Proposed implementation,SOT563: FB1 EN2 VIN3 GND4 SW5 OUT6. 5V output must be trimmed and measured over load/temp.
+L1,1uH Isat>=5A,Coilcraft XEL4030-102ME,,Power.kicad_sch,Proposed implementation,Place input/inductor/SW/output loop tight; 3.7A typical valley current limit.
+C7,22u 10V X7R,,,Power.kicad_sch,Proposed implementation,Effective input capacitance >=10uF after DC-bias derating.
+C8,22u 16V X7R,,,Power.kicad_sch,Proposed implementation,
+C9,22u 16V X7R,,,Power.kicad_sch,Proposed implementation,
+R10,698k 0.1%,,,Power.kicad_sch,Proposed implementation,
+RV1,100k trim,100k 10-turn cermet,,Power.kicad_sch,Proposed implementation,Wiper tied to lower terminal. Set total Rtop ~740k for 5.000V. Trim on bench before connecting sensors.
+R11,100k 0.1%,,,Power.kicad_sch,Proposed implementation,
+C10,100u 10V,,,Power.kicad_sch,Proposed implementation,
+U4,LDL1117S33R,LDL1117S33R,,Power.kicad_sch,Proposed implementation,ST 1.2A ceramic-stable LDO. Plan >=0.5A ESP supply capability plus motor/coil/peripheral peaks; thermal verification mandatory.
+C11,10u 10V,,,Power.kicad_sch,Proposed implementation,
+C12,47u 10V X7R,,,Power.kicad_sch,Proposed implementation,
+R12,0R,,,Power.kicad_sch,Proposed implementation,Output capacitor return link. LDL1117 supports ceramic output caps; do not substitute an older 1117 without checking stability.
+S1,MQ-4 raw (Winsen assumed),Winsen MQ-4 (confirm purchased variant),,Gas_Sensors.kicad_sch,MQ-4 specified; manufacturer/pinout proposed,"1/3 A, 4/6 B, 2/5 heater. No breakout comparator or onboard heater wiring assumed."
+R13,10k 1% RL,,,Gas_Sensors.kicad_sch,Proposed implementation,Effective RL = 10k || 250k = 9.615k; calibrate as assembled.
+R14,150k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R15,100k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+C13,100n 10V,,,Gas_Sensors.kicad_sch,Proposed implementation,
+S2,MQ-7B raw (proposed variant),Winsen MQ-7B (confirm against specified MQ-7),,Gas_Sensors.kicad_sch,MQ-7 specified; MQ-7B is a proposed substitution,"Proposed MQ7B pin assignment 1/3 A,4/6 B,2/5 H; final vendor model must be approved."
+R16,10k 1% RL,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R17,150k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R18,100k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+C14,100n 10V,,,Gas_Sensors.kicad_sch,Proposed implementation,
+U5,TLV1117-15,TLV1117-15IDCYR,,Gas_Sensors.kicad_sch,Proposed implementation,1.5V low-phase heater rail. About 0.175W at 50mA.
+C15,10u 10V,,,Gas_Sensors.kicad_sch,Proposed implementation,
+C16,47u 10V X7R,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R19,0.22R 1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+K1,G5V-1-DC3,Omron G5V-1 DC3,Relay_THT:Relay_SPDT_Omron_G5V-1,Gas_Sensors.kicad_sch,Proposed implementation,"SPDT: contact1 NC=1.5V, contact10 NO=5V, contact5/6 COM=heater. Coil2/9. Physical layout must match library footprint."
+R20,6.8R 0.25W,,,Gas_Sensors.kicad_sch,Proposed implementation,3V 60ohm coil plus 6.8ohm resistor gives ~2.96V coil at 3.3V.
+D1,SS14 flyback,SS14,,Gas_Sensors.kicad_sch,Proposed implementation,
+Q1,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,Gas_Sensors.kicad_sch,Proposed implementation,
+R21,100R,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R22,100k,,,Gas_Sensors.kicad_sch,Proposed implementation,
+J4,H2S AFE MODULE ONLY,TBD electrochemical sensor + matched AFE,,Gas_Sensors.kicad_sch,H2S electrochemical specified; exact cell/AFE unresolved,"Required contract: 3.3V supply <=20mA, buffered voltage output 0..3.3V referenced to GND. NOT for direct raw electrochemical cell."
+R23,150k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+R24,100k 0.1%,,,Gas_Sensors.kicad_sch,Proposed implementation,
+C17,100n 10V,,,Gas_Sensors.kicad_sch,Proposed implementation,
+J5,SPS30 5-pin cable,Sensirion SPS30 + matching 5-pin cable,,User_And_Environment.kicad_sch,Dust function specified p8; SPS30 proposed,"Sensor pin1 VDD,2 RX,3 TX,4 SEL floating for UART,5 GND. Sensor RX <- ESP TX GPIO21; sensor TX -> ESP RX GPIO20."
+C18,100n 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+C19,47u 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+U6,LIS3DH,LIS3DHTR,Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y,User_And_Environment.kicad_sch,Man-down function specified; LIS3DH proposed,"I2C mode CS high, SA0 low =>0x18. Interrupt outputs not used; firmware polls motion. Unused auxiliary ADC inputs grounded."
+C20,100n 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+C21,1u 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+C22,100n 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+J6,1.3in SH1106 OLED,"3.3V SH1106 I2C module, address 0x3C/0x3D",,User_And_Environment.kicad_sch,1.3in OLED specified; exact module unresolved,"Connector contract only; verify module pin order, onboard pulls and true 3.3V operation."
+R25,4.7k,,,User_And_Environment.kicad_sch,Proposed implementation,
+R26,4.7k,,,User_And_Environment.kicad_sch,Proposed implementation,
+J7,I2C EXPANSION,,,User_And_Environment.kicad_sch,Proposed optional expansion,"Optional temperature/humidity or field-sensor interface; only 3.3V short local bus, no 5V pulls."
+R27,10k,,,User_And_Environment.kicad_sch,Proposed implementation,
+SW4,PANIC,,,User_And_Environment.kicad_sch,Proposed implementation,
+C23,100n 10V,,,User_And_Environment.kicad_sch,Proposed implementation,
+J8,3V ERM MOTOR,"3V ERM vibration motor, <=100mA stall",,User_And_Environment.kicad_sch,Vibration alert specified; exact motor unresolved,Choose motor specified for 3.3V supply and validate stall current <=100mA.
+Q2,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,User_And_Environment.kicad_sch,Proposed implementation,
+D2,SS14 flyback,SS14,,User_And_Environment.kicad_sch,Proposed implementation,
+R28,100R,,,User_And_Environment.kicad_sch,Proposed implementation,
+R29,100k,,,User_And_Environment.kicad_sch,Proposed implementation,

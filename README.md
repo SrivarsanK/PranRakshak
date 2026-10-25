@@ -11,6 +11,7 @@
 <p align="center">
   <a href="#the-problem">The problem</a> ·
   <a href="#system-architecture">Architecture</a> ·
+  <a href="#kicad-schematic">KiCad schematic</a> ·
   <a href="#cad-and-design-evidence">CAD gallery</a> ·
   <a href="cad/VKA2026.step">STEP model</a> ·
   <a href="docs/stage-2-submission.pdf">Stage 2 submission</a> ·
@@ -23,7 +24,7 @@ PRAN RAKSHAK is a mine safety project designed to detect underground hazards, wa
 
 Its scope covers methane, carbon monoxide, and hydrogen sulfide monitoring, with dust exposure and mine-runoff quality monitoring included in the wider environmental design. A panic button and motion-based man-down detection support worker distress alerts.
 
-> **Current stage:** CAD design and prototype planning. This repository contains the supplied STEP assembly, three original CAD screenshots, and the Stage 2 submission PDF. Firmware, gateway software, calibration records, and field-test results have not yet been added. Performance figures below are design targets.
+> **Current stage:** CAD and electrical schematic design, Revision A. The repository includes the STEP assembly, original CAD screenshots, an editable four-sheet KiCad project, BOM, schematic PDF, ERC report, and Stage 2 submission. Firmware, gateway software, calibration records, and field-test results remain pending. Performance figures below are design targets, with current schematic limitations stated separately.
 
 <p align="center">
   <img src="assets/cad/assembly-wiring.jpeg" alt="CAD view of the sensor enclosure with an exploded lid, ESP32 board, gas sensor, power module, and color-coded wiring" width="100%">
@@ -93,25 +94,51 @@ Wi-Fi/MQTT is the baseline communication design. Multi-hop routing, Kinetic Mesh
 
 ## Hardware and software design
 
-| Subsystem | Selection or role described in the submission |
+| Subsystem | Requirement and current design |
 | --- | --- |
-| Node controller | ESP32-C3 for sensor acquisition, threshold checks, timestamps, and wireless telemetry. |
+| Node controller | ESP32-C3 for sensor acquisition and wireless telemetry; Revision A uses ESP32-C3-WROOM-02-N4 with boot/reset, native USB, and battery ADC circuitry. |
 | Methane sensing | MQ-4 sensor, subject to calibration and heater-power validation. |
-| Carbon monoxide sensing | MQ-7 sensor, with its sampling and heater cycle to be validated. |
-| Hydrogen sulfide sensing | Electrochemical H2S sensor with analog signal conditioning; final sensor part is unspecified. |
+| Carbon monoxide sensing | MQ-7 requirement; Revision A proposes MQ-7B with heater-rail selection and ADC conditioning. Its heating cycle limits fresh measurement timing. |
+| Hydrogen sulfide sensing | Electrochemical H2S requirement; Revision A provides an interface for a conditioned module. The exact cell/module and analog front end remain unresolved. |
 | Temperature/humidity | A sensor is represented in the supplied CAD assembly; compensation is discussed in the risk-mitigation plan. |
-| Motion and panic input | Motion sensing for man-down detection and a manual distress button; final parts are unspecified. |
-| Dust and runoff sensing | Included in project scope; sensor models, interfaces, and calibration methods remain to be selected. |
-| Node power | Proposed 3.7 V, 2500 mAh LiPo, charging/protection, and regulated supply rails. |
+| Motion and panic input | Revision A proposes LIS3DH motion sensing and a manual panic input. Man-down firmware and trials remain pending. |
+| Dust and runoff sensing | Revision A proposes an SPS30 dust interface. Runoff sensing remains outside the node schematic; final measurement methods require validation. |
+| Node power | Revision A includes a protected battery-pack interface, TP4056 charger, charge/run separation, 5 V boost, and regulated rails. Power and charging behavior require bench validation. |
 | Local gateway | Raspberry Pi 4 Model B, 4 GB RAM, with Mosquitto MQTT and local processing. |
 | Storage and outputs | Proposed 64 GB microSD logging, 1.3-inch OLED, and an 85 dB siren/alarm output. |
 | Mechanical design | Enclosure, lid, mounting standoffs, board placement, and wiring represented in the STEP assembly. |
 
 The STEP model is a mechanical presentation of one sensor pod. Its generic component geometry does not establish exact electronic part numbers or demonstrate the complete helmet, gateway, or multi-node installation.
 
+## KiCad schematic
+
+The [Revision A KiCad package](hardware/README.md) contains a four-sheet, editable ESP32-C3 node design. It includes project-local symbols, a reference-level BOM, the exported netlist, and electrical verification records. Proposed parts and unresolved interfaces are identified in its [design notes](hardware/kicad/Design_Notes.md).
+
+[![Main ESP32-C3 schematic sheet exported from KiCad](assets/schematic/esp32-c3-overview.png)](hardware/kicad/Schematic_Review.pdf)
+
+*Main controller sheet. Open the [four-page schematic PDF](hardware/kicad/Schematic_Review.pdf) for readable details and the power, gas-sensor, and user/environment sheets.*
+
+| Sheet | Contents |
+| --- | --- |
+| [PRAN_RAKSHAK.kicad_sch](hardware/kicad/PRAN_RAKSHAK.kicad_sch) | ESP32-C3 controller, boot/reset, native USB, battery monitoring, and child-sheet hierarchy. |
+| [Power.kicad_sch](hardware/kicad/Power.kicad_sch) | Protected pack interface, TP4056 charging, charge/run switch, boost converter, and regulators. |
+| [Gas_Sensors.kicad_sch](hardware/kicad/Gas_Sensors.kicad_sch) | MQ-4/MQ-7B signal conditioning, heater selection, and conditioned H2S module interface. |
+| [User_And_Environment.kicad_sch](hardware/kicad/User_And_Environment.kicad_sch) | Proposed SPS30 dust interface, LIS3DH accelerometer, OLED, panic input, and vibration-motor driver. |
+
+Download the [complete KiCad ZIP](hardware/PRAN_RAKSHAK_KiCad.zip), or use the cloned repository. In KiCad 10, open [`hardware/kicad/PRAN_RAKSHAK.kicad_pro`](hardware/kicad/PRAN_RAKSHAK.kicad_pro), then open the schematic. Keep all four sheets, `PRAN.kicad_sym`, and `sym-lib-table` together.
+
+| Design evidence | Result or file |
+| --- | --- |
+| Native KiCad ERC | **0 electrical errors, 68 footprint-review warnings, no exclusions or ignored checks**, reproduced with KiCad 10.0.7 after importing the package into this repository. |
+| Remaining warnings | Unassigned footprints; footprint selection and PCB layout are still required. This is not a warning-free ERC result. |
+| Verification record | [Original ERC JSON](hardware/kicad/ERC_Report.json) and [verification notes](hardware/kicad/Verification.md), which record 125 connection/structure checks. |
+| Bill of materials | [Full BOM](hardware/kicad/BOM.csv) and [short BOM with proposed selections](hardware/kicad/Short_BOM.md); prices have not been quoted. |
+
+Revision A is a bench schematic. Its design calculations estimate approximately **2.4–3.1 hours** of runtime under the stated load assumptions, below the eight-hour target. The proposed MQ-7B's **150-second heater cycle** also prevents a guaranteed fresh CO measurement within ten seconds across all phases. The H2S cell/AFE remains an open design item. See the [electrical design notes](hardware/kicad/Design_Notes.md) before building; no PCB layout or certified mining hardware is included.
+
 ## Engineering targets
 
-These targets come from the project specification on page 7 of the [Stage 2 submission](docs/stage-2-submission.pdf). They have not been verified by measurements in this repository.
+These targets come from the project specification on page 7 of the [Stage 2 submission](docs/stage-2-submission.pdf). They have not been verified by measurements in this repository. The KiCad design notes identify current runtime and CO-sensor timing conflicts with these targets.
 
 | Parameter | Design target |
 | --- | --- |
@@ -171,11 +198,11 @@ Intrinsic safety, flame protection, enclosure sealing, and impact resistance req
 
 ## Roadmap
 
-The schedule below follows the submission's October 2026–January 2027 fabrication plan. Items remain open until supporting deliverables are published.
+The schedule below follows the submission's October 2026–January 2027 fabrication plan. The Revision A schematic, BOM, and ERC evidence are now published; footprint selection, procurement, and calibration remain open.
 
 | Period | Planned work | Evidence to publish |
 | --- | --- | --- |
-| October 2026 | Finalize schematics, run electrical checks, procure components, and bench-calibrate gas sensors. | Editable EDA files, check reports, BOM, and calibration records. |
+| October 2026 | Review Revision A, resolve footprints and open interfaces, procure components, and bench-calibrate gas sensors. | KiCad project, BOM, and ERC report published; final component selection, quotes, and calibration records pending. |
 | November 2026 | Assemble four sensor nodes and the helmet unit; bring up the Pi gateway, broker, display, and alarms. | Assembly photos, firmware, gateway configuration, and timestamped telemetry. |
 | December 2026 | Test connectivity, node loss, man-down detection, watchdogs, brownouts, and corridor localization. | Integration logs and measured alert/localization behavior. |
 | January 2027 | Run endurance and drift tests, tune the system, and prepare the Stage 3 demonstration. | Battery measurements, soak-test records, and demonstration evidence. |
@@ -187,13 +214,19 @@ PranRakshak/
 ├── README.md
 ├── assets/
 │   ├── pran-rakshak-banner.png
-│   └── cad/
-│       ├── assembly-wiring.jpeg
-│       ├── assembly-overview.jpeg
-│       └── enclosure-components.jpeg
+│   ├── cad/
+│   │   ├── assembly-wiring.jpeg
+│   │   ├── assembly-overview.jpeg
+│   │   └── enclosure-components.jpeg
+│   └── schematic/
+│       └── esp32-c3-overview.png
 ├── cad/
 │   ├── README.md
 │   └── VKA2026.step
+├── hardware/
+│   ├── README.md
+│   ├── PRAN_RAKSHAK_KiCad.zip
+│   └── kicad/                    # Native project, sheets, symbols, BOM, PDF, and reports
 └── docs/
     ├── banner-design.md
     ├── design-notes.md
@@ -216,6 +249,8 @@ For the evidence inventory, source-page mapping, and unresolved specification de
 ## Sources and acknowledgements
 
 The team's [Stage 2 submission PDF](docs/stage-2-submission.pdf) supplies the project scope and specifications; the CAD screenshots and STEP model document the supplied design. Template examples are excluded as evidence of completed work.
+
+The [Revision A electrical design notes](hardware/kicad/Design_Notes.md) document the KiCad schematic's engineering choices, calculations, and component datasheet references. These proposed choices are distinguished from the submission's requirements.
 
 The banner is an AI-generated concept illustration derived from the PDF's mining-safety concept and architecture. Its [design notes and generation prompt](docs/banner-design.md) record the source pages.
 

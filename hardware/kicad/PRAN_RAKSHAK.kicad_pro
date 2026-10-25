@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "filename": "PRAN_RAKSHAK.kicad_pro",
+    "version": 1
+  },
+  "erc": {
+    "meta": {
+      "version": 0
+    },
+    "erc_exclusions": [],
+    "rule_severities": {
+      "single_global_label": "warning",
+      "four_way_junction": "warning",
+      "simulation_model_issue": "warning",
+      "footprint_filter": "warning"
+    }
+  }
+}

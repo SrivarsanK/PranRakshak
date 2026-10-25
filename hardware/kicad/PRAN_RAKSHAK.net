@@ -1,0 +1,8463 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\Srivarsan\\Documents\\Codex\\2026-10-25\\referenced-chatgpt-conversation-this-is-an\\outputs\\PRAN_RAKSHAK_KiCad\\PRAN_RAKSHAK.kicad_sch")
+		(date "2026-10-25T20:40:03")
+		(tool "Eeschema 10.0.7")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "01 | ESP32-C3 controller and programming")
+				(company "PRAN RAKSHAK | VK26-IITH-SM-0275")
+				(rev "A - BENCH PROTOTYPE")
+				(date "2026-10-25")
+				(source "PRAN_RAKSHAK.kicad_sch")
+				(comment
+					(number "1")
+					(value "NOT INTRINSICALLY SAFE - NOT FOR EXPLOSIVE ATMOSPHERES")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/Protected battery, chargi/")
+			(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			(title_block
+				(title "02 | Protected battery, charging and regulated rails")
+				(company "PRAN RAKSHAK | VK26-IITH-SM-0275")
+				(rev "A - BENCH PROTOTYPE")
+				(date "2026-10-25")
+				(source "Power.kicad_sch")
+				(comment
+					(number "1")
+					(value "NOT INTRINSICALLY SAFE - NOT FOR EXPLOSIVE ATMOSPHERES")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/Gas sensor conditioning a/")
+			(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			(title_block
+				(title "03 | Gas sensor conditioning and MQ-7 heater cycle")
+				(company "PRAN RAKSHAK | VK26-IITH-SM-0275")
+				(rev "A - BENCH PROTOTYPE")
+				(date "2026-10-25")
+				(source "Gas_Sensors.kicad_sch")
+				(comment
+					(number "1")
+					(value "NOT INTRINSICALLY SAFE - NOT FOR EXPLOSIVE ATMOSPHERES")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/Dust, motion, display, pa/")
+			(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			(title_block
+				(title "04 | Dust, motion, display, panic and haptic alert")
+				(company "PRAN RAKSHAK | VK26-IITH-SM-0275")
+				(rev "A - BENCH PROTOTYPE")
+				(date "2026-10-25")
+				(source "User_And_Environment.kicad_sch")
+				(comment
+					(number "1")
+					(value "NOT INTRINSICALLY SAFE - NOT FOR EXPLOSIVE ATMOSPHERES")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "1u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "57f02de8-0dcb-43a7-8666-4b9d1fe13ce1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "abe6b040-cc26-4710-843c-52f3b9dad8e8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "22u 10V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bb2187d6-61a4-4a80-8bbc-38949fbfc100")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c82304c0-4d54-4757-81ab-d0950f438859")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "USB DEBUG ONLY")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "USB_B_Micro_SelfPowered")
+				(description "USB Micro Type B connector")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector USB micro")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "USB*Micro*B*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "970bf854-6f8c-48ca-b1ca-57aefcf768be")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "SH")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "10k")
+			(fields
+				(field
+					(name "MPN") "10k 1% 0603")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "10k 1% 0603")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9d790207-d494-486c-af87-1864b2cc5a8a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "10k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8b39f6cb-5e6b-485d-a204-45b66452ec4e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "10k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "30f384b6-0b96-4819-ac41-8e02e37f7b9f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "22R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1263e1d8-f0aa-4183-a743-81ab408bf4ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "22R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3ae8d2e1-09cf-4b16-b996-98b3d4b1e73a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "150k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4b6377c6-9a10-48a3-8f28-44af3de69b5a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "100k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f21c415b-f8e8-4b08-928b-72ada065ee5f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "RESET")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_Push")
+				(description "Push button switch, generic, two pins")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch normally-open pushbutton push-button")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cba5b859-f014-474d-a34f-4c6389bbd13e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "BOOT")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_Push")
+				(description "Push button switch, generic, two pins")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch normally-open pushbutton push-button")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5bfc0469-338e-4b50-995a-77f15d4e9a17")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "ESP32-C3-WROOM-02-N4")
+			(footprint "RF_Module:ESP32-C3-WROOM-02")
+			(datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf")
+			(fields
+				(field
+					(name "MPN") "ESP32-C3-WROOM-02-N4")
+				(field
+					(name "Design_status") "Named in PDF pp9,13")
+				(field
+					(name "Footprint") "RF_Module:ESP32-C3-WROOM-02")
+				(field
+					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "RF_Module")
+				(part "ESP32-C3-WROOM-02")
+				(description "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna")
+			)
+			(property
+				(name "MPN")
+				(value "ESP32-C3-WROOM-02-N4")
+			)
+			(property
+				(name "Design_status")
+				(value "Named in PDF pp9,13")
+			)
+			(property
+				(name "Sheetname")
+				(value "PRAN_RAKSHAK")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PRAN_RAKSHAK.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "esp32 espressif WiFi Bluetooth LE")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "ESP32?C3*WROOM?02*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "11f01fdb-cf57-46f7-958a-ab11265edf1e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "10u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "97ab7a63-0ef2-4609-a482-88503075ab9d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "10u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "5a40a443-d524-422d-81e8-7ba449a94d45")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "22u 10V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "f63f5da2-6596-40ba-8f9c-624a84956a3d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "22u 16V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "34be3b79-1852-4059-8331-ac18daac1981")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "22u 16V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "51076242-b4e4-43a6-9502-3bde03bded00")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "100u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "2a665a7a-fc9c-496b-b5a2-01f4405dc687")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "10u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "709aa9c2-be05-434a-bbed-1a416226631a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "47u 10V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "aa1d70de-a346-45e0-8d5a-73d2f19904e2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "F1")
+			(value "3A fast fuse")
+			(fields
+				(field
+					(name "MPN") "Littelfuse 0451003.MRL")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "Fuse")
+				(description "Fuse")
+			)
+			(property
+				(name "MPN")
+				(value "Littelfuse 0451003.MRL")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fuse")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*Fuse*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "f707f92f-702b-4c0b-b2d7-2b31be2f2b82")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "F2")
+			(value "0.5A input fuse")
+			(fields
+				(field
+					(name "MPN") "0.5A fast fuse")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "Fuse")
+				(description "Fuse")
+			)
+			(property
+				(name "MPN")
+				(value "0.5A fast fuse")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fuse")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*Fuse*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "7ef4bcfa-b7fe-47f1-b328-da7e03baea4c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "PROTECTED PACK 2500mAh")
+			(fields
+				(field
+					(name "MPN") "Protected 1S 2500mAh LiPo, 10k B3435 NTC")
+				(field
+					(name "Design_status") "Capacity specified; protection and NTC proposed")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x03")
+				(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "Protected 1S 2500mAh LiPo, 10k B3435 NTC")
+			)
+			(property
+				(name "Design_status")
+				(value "Capacity specified; protection and NTC proposed")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "4556b10f-5055-460e-b61d-7f0bdce2ee80")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "5V CHARGE INPUT")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "ed85abbe-7e6a-4187-937e-893569ea097e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "1uH Isat>=5A")
+			(fields
+				(field
+					(name "MPN") "Coilcraft XEL4030-102ME")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "L")
+				(description "Inductor")
+			)
+			(property
+				(name "MPN")
+				(value "Coilcraft XEL4030-102ME")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "inductor choke coil reactor magnetic")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Choke_* *Coil* Inductor_* L_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "a0fefb2b-6937-4543-a69f-75b516267df7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "6.04k 1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "24082499-56fb-4d2d-a884-3068cbc2d41b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "6.8k 1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "90d72846-0477-4127-9b93-0a218db10c8d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "698k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "4ddcd853-cbdd-480f-bfd5-d94b54b2814c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "100k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "989fb882-085c-45af-835c-0dc068c7fcd2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "0R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "31df16b5-6413-446c-9b97-da43ece14deb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RV1")
+			(value "100k trim")
+			(fields
+				(field
+					(name "MPN") "100k 10-turn cermet")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer")
+				(description "Potentiometer")
+			)
+			(property
+				(name "MPN")
+				(value "100k 10-turn cermet")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "7cd7d180-d5f5-449b-a0ff-4cb4310e189b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW3")
+			(value "CHARGE / RUN")
+			(fields
+				(field
+					(name "MPN") "Break-before-make SPDT >=3A DC")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "MPN")
+				(value "Break-before-make SPDT >=3A DC")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "98ad5f6a-2195-4aaa-b423-e40a44839683")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "TP4056-42-ESOP8")
+			(footprint "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf")
+			(fields
+				(field
+					(name "MPN") "TP4056-42-ESOP8")
+				(field
+					(name "Design_status") "TP4056 specified; discrete implementation proposed")
+				(field
+					(name "Footprint") "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Battery_Management")
+				(part "TP4056-42-ESOP8")
+				(description "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)")
+			)
+			(property
+				(name "MPN")
+				(value "TP4056-42-ESOP8")
+			)
+			(property
+				(name "Design_status")
+				(value "TP4056 specified; discrete implementation proposed")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "lithium-ion lithium-polymer Li-Poly")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "7f77995a-490c-40ca-add1-7cca6d16b348")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "TPS61023DRLR")
+			(footprint "Package_TO_SOT_SMD:SOT-563")
+			(fields
+				(field
+					(name "MPN") "TPS61023DRLR")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-563")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "TPS61023DRLR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "TPS61023DRLR")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "0595eb54-4445-4831-a0f3-3d7430529db8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "LDL1117S33R")
+			(datasheet "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+			(fields
+				(field
+					(name "MPN") "LDL1117S33R")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "LDL1117S33R")
+				(description "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			)
+			(property
+				(name "MPN")
+				(value "LDL1117S33R")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Protected battery, chargi")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "linear regulator ldo fixed positive")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?223* TO?263* TO?252* TO?220*")
+			)
+			(sheetpath
+				(names "/Protected battery, chargi/")
+				(tstamps "/901d20a7-b242-41c6-a85f-c29fb1245dfb/")
+			)
+			(tstamps "cdc9b9d9-72bd-4781-825a-7596e766a60e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "6ec3a316-a431-40dd-93c0-9e7d48ac38a0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "cd7c8530-cfd9-4873-9a70-719d171a95b5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "10u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "f43dbaae-ada6-4490-be1e-9f4c3c6b7d1f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "47u 10V X7R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "9ffc0c7e-adae-4496-bde9-a2b6a5f914b6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "1681fb9a-58bf-4ced-9318-8bb290eb238f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "SS14 flyback")
+			(fields
+				(field
+					(name "MPN") "SS14")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "MPN")
+				(value "SS14")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "6da2effc-2236-4a6a-b053-0bd182aa55d0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "H2S AFE MODULE ONLY")
+			(fields
+				(field
+					(name "MPN") "TBD electrochemical sensor + matched AFE")
+				(field
+					(name "Design_status") "H2S electrochemical specified; exact cell/AFE unresolved")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x03")
+				(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "TBD electrochemical sensor + matched AFE")
+			)
+			(property
+				(name "Design_status")
+				(value "H2S electrochemical specified; exact cell/AFE unresolved")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "bbabf75d-93c1-462d-8649-383f3ca19d8c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "K1")
+			(value "G5V-1-DC3")
+			(footprint "Relay_THT:Relay_SPDT_Omron_G5V-1")
+			(datasheet "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf")
+			(fields
+				(field
+					(name "MPN") "Omron G5V-1 DC3")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint") "Relay_THT:Relay_SPDT_Omron_G5V-1")
+				(field
+					(name "Datasheet") "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Relay")
+				(part "G5V-1")
+				(description "Ultra-miniature, Highly Sensitive SPDT Relay for Signal Circuits")
+			)
+			(property
+				(name "MPN")
+				(value "Omron G5V-1 DC3")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Single Pole Relay SPDT")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Relay*SPDT*Omron*G5V?1*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "2cac5d84-f8d1-4516-915e-f642316f049a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "10")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "AO3400A")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+			(fields
+				(field
+					(name "MPN") "AO3400A")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Transistor_FET")
+				(part "AO3400A")
+				(description "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23")
+			)
+			(property
+				(name "MPN")
+				(value "AO3400A")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "N-Channel MOSFET")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "6c4e0d71-dc8b-4d01-b0c9-e1f363867351")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "10k 1% RL")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "67ec651e-8900-4db2-b0af-a943a6c745fe")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "150k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "1cb038c0-7c5a-4bac-a5d6-f80c3996f8db")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "100k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "baa57fc8-3ddc-4edd-920a-12f6f450742f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "10k 1% RL")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "177f58f6-282e-410c-9295-f55282dbb2bf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "150k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "9fc7e6b1-7359-437b-ae99-706d56216d4c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "100k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "3ba39d00-acd8-40ee-889d-63ade3ff371d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "0.22R 1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "e0ba0dba-fdb6-4c48-aa6e-c9afdd1042c9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "6.8R 0.25W")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "772f72c7-0890-45d3-a185-f3e9b714e90e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
+			(value "100R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "e3192ed1-50ef-41de-be08-cb5ebabff2f4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R22")
+			(value "100k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "5baf85b0-388b-400f-8f5e-6693dd8f248b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R23")
+			(value "150k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "bd6f9342-fede-4a23-b5a9-bf0dca823646")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R24")
+			(value "100k 0.1%")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "8890d1e4-f866-482f-acd5-8a5e4cd37899")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "S1")
+			(value "MQ-4 raw (Winsen assumed)")
+			(fields
+				(field
+					(name "MPN") "Winsen MQ-4 (confirm purchased variant)")
+				(field
+					(name "Design_status") "MQ-4 specified; manufacturer/pinout proposed")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "MQ_RAW_6PIN")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Winsen MQ-4 (confirm purchased variant)")
+			)
+			(property
+				(name "Design_status")
+				(value "MQ-4 specified; manufacturer/pinout proposed")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "9493513b-2f03-497a-a256-de642da355c6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "S2")
+			(value "MQ-7B raw (proposed variant)")
+			(fields
+				(field
+					(name "MPN") "Winsen MQ-7B (confirm against specified MQ-7)")
+				(field
+					(name "Design_status") "MQ-7 specified; MQ-7B is a proposed substitution")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "MQ_RAW_6PIN")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Winsen MQ-7B (confirm against specified MQ-7)")
+			)
+			(property
+				(name "Design_status")
+				(value "MQ-7 specified; MQ-7B is a proposed substitution")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "3e08dc2a-cafc-4bcb-89ac-46820bd21a30")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U5")
+			(value "TLV1117-15")
+			(datasheet "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+			(fields
+				(field
+					(name "MPN") "TLV1117-15IDCYR")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Regulator_Linear")
+				(part "TLV1117-15")
+				(description "800mA Low-Dropout Linear Regulator, 1.5V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			)
+			(property
+				(name "MPN")
+				(value "TLV1117-15IDCYR")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas sensor conditioning a")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Gas_Sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "linear regulator ldo fixed positive")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?223* TO?263* TO?252* TO?220*")
+			)
+			(sheetpath
+				(names "/Gas sensor conditioning a/")
+				(tstamps "/e426800a-da98-40df-8a98-a38c8f02bb57/")
+			)
+			(tstamps "aa8ab553-b79f-4c32-812f-396ad18b07a0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "f99d3c4b-3e37-4f4f-8831-ebc925a31374")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "47u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "ae9a1f1d-2344-44cb-af6d-07d7c96330a2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "41f1075c-81a2-4554-bc7d-f7c1206588e7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "1u 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "5217f2cf-48ac-442f-83b6-aaf3560a98f9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "2ced538f-7cf5-4fdc-9138-7bdf0fc0cbfd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "100n 10V")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "1030b45e-d38d-4c86-9bc7-5ad824b14797")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "SS14 flyback")
+			(fields
+				(field
+					(name "MPN") "SS14")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "MPN")
+				(value "SS14")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "c9e71399-9c71-43db-b8f1-5b3cb1b4efb8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "SPS30 5-pin cable")
+			(fields
+				(field
+					(name "MPN") "Sensirion SPS30 + matching 5-pin cable")
+				(field
+					(name "Design_status") "Dust function specified p8; SPS30 proposed")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x05")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "Sensirion SPS30 + matching 5-pin cable")
+			)
+			(property
+				(name "Design_status")
+				(value "Dust function specified p8; SPS30 proposed")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "0d75be92-89f2-420c-b3e6-3722bc192406")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J6")
+			(value "1.3in SH1106 OLED")
+			(fields
+				(field
+					(name "MPN") "3.3V SH1106 I2C module, address 0x3C/0x3D")
+				(field
+					(name "Design_status") "1.3in OLED specified; exact module unresolved")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x04")
+				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "3.3V SH1106 I2C module, address 0x3C/0x3D")
+			)
+			(property
+				(name "Design_status")
+				(value "1.3in OLED specified; exact module unresolved")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "79f34f03-ca4a-496c-8f1c-64b2cb20c992")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J7")
+			(value "I2C EXPANSION")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed optional expansion")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x04")
+				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed optional expansion")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "1dc325da-f4b1-4eb2-b0bb-f1e26c7ef152")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J8")
+			(value "3V ERM MOTOR")
+			(fields
+				(field
+					(name "MPN") "3V ERM vibration motor, <=100mA stall")
+				(field
+					(name "Design_status") "Vibration alert specified; exact motor unresolved")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "MPN")
+				(value "3V ERM vibration motor, <=100mA stall")
+			)
+			(property
+				(name "Design_status")
+				(value "Vibration alert specified; exact motor unresolved")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "8f6a5af7-973e-4448-b17e-a5aa93595778")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "AO3400A")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+			(fields
+				(field
+					(name "MPN") "AO3400A")
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Transistor_FET")
+				(part "AO3400A")
+				(description "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23")
+			)
+			(property
+				(name "MPN")
+				(value "AO3400A")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "N-Channel MOSFET")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "1dda348f-d95e-4947-bca2-0f293cf53a3f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "4.7k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "59a9cc61-f067-46e7-8b11-71714a43ab49")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "4.7k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "a35ef70a-1a36-4e0a-be4b-bcb1b111c563")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
+			(value "10k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "d3d5f5d5-d5b0-4afc-b5ed-1a2c7fd51ab8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R28")
+			(value "100R")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "9b8c35ba-31a0-44a4-96b8-15bad5f49138")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R29")
+			(value "100k")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "179ef151-d1f3-483b-b106-c3edce198b41")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW4")
+			(value "PANIC")
+			(fields
+				(field
+					(name "MPN")
+				)
+				(field
+					(name "Design_status") "Proposed implementation")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_Push")
+				(description "Push button switch, generic, two pins")
+			)
+			(property
+				(name "MPN")
+				(value "")
+			)
+			(property
+				(name "Design_status")
+				(value "Proposed implementation")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch normally-open pushbutton push-button")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "43103be2-e7fb-4f54-a1f5-94a0b20894ec")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U6")
+			(value "LIS3DH")
+			(footprint "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y")
+			(datasheet "https://www.st.com/resource/en/datasheet/cd00274221.pdf")
+			(fields
+				(field
+					(name "MPN") "LIS3DHTR")
+				(field
+					(name "Design_status") "Man-down function specified; LIS3DH proposed")
+				(field
+					(name "Footprint") "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/cd00274221.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "PRAN")
+				(part "LIS3DH_I2C")
+				(description "3-Axis Accelerometer, 2/4/8/16g range, I2C/SPI interface, LGA-16")
+			)
+			(property
+				(name "MPN")
+				(value "LIS3DHTR")
+			)
+			(property
+				(name "Design_status")
+				(value "Man-down function specified; LIS3DH proposed")
+			)
+			(property
+				(name "Sheetname")
+				(value "Dust, motion, display, pa")
+			)
+			(property
+				(name "Sheetfile")
+				(value "User_And_Environment.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "3-axis accelerometer i2c spi mems")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LGA*3x3mm*P0.5mm*LayoutBorder3x5y*")
+			)
+			(sheetpath
+				(names "/Dust, motion, display, pa/")
+				(tstamps "/f5a50b1c-e798-43aa-a644-1c70c989ee54/")
+			)
+			(tstamps "1a6f9c6a-cb1b-4013-ac89-a8a8df4c2a3e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "13")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Battery_Management")
+			(part "TP4056-42-ESOP8")
+			(description "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf")
+			(footprints
+				(fp "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TP4056-42-ESOP8")
+				(field
+					(name "Footprint") "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf")
+				(field
+					(name "Description") "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "TEMP")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "PROG")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "V_{CC}")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "BAT")
+					(type "power_out")
+				)
+				(pin
+					(num "6")
+					(name "~{STDBY}")
+					(type "open_collector")
+				)
+				(pin
+					(num "7")
+					(name "~{CHRG}")
+					(type "open_collector")
+				)
+				(pin
+					(num "8")
+					(name "CE")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "EPAD")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x02")
+			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x03")
+			(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x03")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x04")
+			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x04")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x05")
+			(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x05")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "D_Schottky")
+			(description "Schottky diode")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D_Schottky")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "Fuse")
+			(description "Fuse")
+			(footprints
+				(fp "*Fuse*")
+			)
+			(fields
+				(field
+					(name "Reference") "F")
+				(field
+					(name "Value") "Fuse")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fuse")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "L")
+			(description "Inductor")
+			(footprints
+				(fp "Choke_*")
+				(fp "*Coil*")
+				(fp "Inductor_*")
+				(fp "L_*")
+			)
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "L")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Inductor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R_Potentiometer")
+			(description "Potentiometer")
+			(footprints
+				(fp "Potentiometer*")
+			)
+			(fields
+				(field
+					(name "Reference") "RV")
+				(field
+					(name "Value") "R_Potentiometer")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Potentiometer")
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "PRAN")
+			(part "LDL1117S33R")
+			(description "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			(docs "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+			(footprints
+				(fp "SOT?223*")
+				(fp "TO?263*")
+				(fp "TO?252*")
+				(fp "TO?220*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV1117-33")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+				(field
+					(name "Description") "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "VO")
+					(type "power_out")
+				)
+				(pin
+					(num "3")
+					(name "VI")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "PRAN")
+			(part "LIS3DH_I2C")
+			(description "3-Axis Accelerometer, 2/4/8/16g range, I2C/SPI interface, LGA-16")
+			(docs "https://www.st.com/resource/en/datasheet/cd00274221.pdf")
+			(footprints
+				(fp "LGA*3x3mm*P0.5mm*LayoutBorder3x5y*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LIS3DH")
+				(field
+					(name "Footprint") "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/cd00274221.pdf")
+				(field
+					(name "Description") "3-Axis Accelerometer, 2/4/8/16g range, I2C/SPI interface, LGA-16")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VDD_IO")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "3")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "4")
+					(name "SCL")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "SA0")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "CS")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "INT2")
+					(type "output")
+				)
+				(pin
+					(num "10")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "INT1")
+					(type "output")
+				)
+				(pin
+					(num "12")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "ADC3")
+					(type "input")
+				)
+				(pin
+					(num "14")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "15")
+					(name "ADC2")
+					(type "input")
+				)
+				(pin
+					(num "16")
+					(name "ADC1")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "PRAN")
+			(part "MQ_RAW_6PIN")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MQ_RAW_6PIN")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "H")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "H")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "B")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "PRAN")
+			(part "TPS61023DRLR")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TPS61023DRLR")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "FB")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "SW")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "VOUT")
+					(type "power_out")
+				)
+			)
+		)
+		(libpart
+			(lib "PRAN")
+			(part "USB_B_Micro_SelfPowered")
+			(description "USB Micro Type B connector")
+			(footprints
+				(fp "USB*Micro*B*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "USB_B_Micro")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "USB Micro Type B connector")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VBUS")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "D-")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "D+")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "ID")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "SH")
+					(name "Shield")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "RF_Module")
+			(part "ESP32-C3-WROOM-02")
+			(description "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna")
+			(docs "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf")
+			(footprints
+				(fp "ESP32?C3*WROOM?02*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ESP32-C3-WROOM-02")
+				(field
+					(name "Footprint") "RF_Module:ESP32-C3-WROOM-02")
+				(field
+					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf")
+				(field
+					(name "Description") "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "IO4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "IO5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "IO6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "IO7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "IO8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "IO9")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "10")
+					(name "IO10")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "IO20/RXD")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "IO21/TXD")
+					(type "bidirectional")
+				)
+				(pin
+					(num "13")
+					(name "IO18")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "IO19")
+					(type "bidirectional")
+				)
+				(pin
+					(num "15")
+					(name "IO3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "16")
+					(name "IO2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "17")
+					(name "IO1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "18")
+					(name "IO0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "19")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Regulator_Linear")
+			(part "TLV1117-15")
+			(description "800mA Low-Dropout Linear Regulator, 1.5V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			(docs "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+			(footprints
+				(fp "SOT?223*")
+				(fp "TO?263*")
+				(fp "TO?252*")
+				(fp "TO?220*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV1117-15")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tlv1117.pdf")
+				(field
+					(name "Description") "800mA Low-Dropout Linear Regulator, 1.5V fixed output, TO-220/TO-252/TO-263/SOT-223")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "VO")
+					(type "power_out")
+				)
+				(pin
+					(num "3")
+					(name "VI")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "Relay")
+			(part "G5V-1")
+			(description "Ultra-miniature, Highly Sensitive SPDT Relay for Signal Circuits")
+			(docs "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf")
+			(footprints
+				(fp "Relay*SPDT*Omron*G5V?1*")
+			)
+			(fields
+				(field
+					(name "Reference") "K")
+				(field
+					(name "Value") "G5V-1")
+				(field
+					(name "Footprint") "Relay_THT:Relay_SPDT_Omron_G5V-1")
+				(field
+					(name "Datasheet") "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf")
+				(field
+					(name "Description") "Ultra-miniature, Highly Sensitive SPDT Relay for Signal Circuits")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_Push")
+			(description "Push button switch, generic, two pins")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_Push")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Push button switch, generic, two pins")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_SPDT")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_SPDT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Transistor_FET")
+			(part "AO3400A")
+			(description "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23")
+			(docs "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+			(footprints
+				(fp "SOT?23*")
+			)
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "AO3400A")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf")
+				(field
+					(name "Description") "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Battery_Management")
+			(uri "${KICAD10_SYMBOL_DIR}/Battery_Management.kicad_sym")
+		)
+		(library
+			(logical "Connector_Generic")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "PRAN")
+			(uri "${KIPRJMOD}/PRAN.kicad_sym")
+		)
+		(library
+			(logical "RF_Module")
+			(uri "${KICAD10_SYMBOL_DIR}/RF_Module.kicad_sym")
+		)
+		(library
+			(logical "Regulator_Linear")
+			(uri "${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym")
+		)
+		(library
+			(logical "Relay")
+			(uri "${KICAD10_SYMBOL_DIR}/Relay.kicad_sym")
+		)
+		(library
+			(logical "Switch")
+			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
+		)
+		(library
+			(logical "Transistor_FET")
+			(uri "${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "BAT_ADC")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "IO4_3")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "2")
+			(name "BAT_RUN")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "EN_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "VIN_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "BOOST_FB")
+			(class "Default")
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "FB_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "4")
+			(name "BOOST_SW")
+			(class "Default")
+			(node
+				(ref "L1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "SW_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "BOOT_N")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "IO9_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "6")
+			(name "CH4_ADC")
+			(class "Default")
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "IO0_18")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "7")
+			(name "CH4_RAW")
+			(class "Default")
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "4")
+				(pinfunction "B_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "6")
+				(pinfunction "B_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "CHARGE_BAT")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "BAT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "9")
+			(name "CHG_5V")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "F2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "V_{CC}_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "CE_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "10")
+			(name "CHG_5V_IN")
+			(class "Default")
+			(node
+				(ref "F2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "CHG_PROG")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "PROG_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "COIL_LOW")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "K1")
+				(pin "9")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "COIL_PLUS")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "K1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "CO_ADC")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "IO1_17")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "15")
+			(name "CO_GATE")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "CO_HEATER")
+			(class "Default")
+			(node
+				(ref "K1")
+				(pin "5")
+				(pintype "passive")
+			)
+			(node
+				(ref "K1")
+				(pin "6")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "2")
+				(pinfunction "H_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "CO_HEAT_HIGH")
+			(class "Default")
+			(node
+				(ref "R21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "IO7_6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "18")
+			(name "CO_RAW")
+			(class "Default")
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "4")
+				(pinfunction "B_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "6")
+				(pinfunction "B_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "DUST_RX")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "IO21/TXD_12")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "20")
+			(name "DUST_TX")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "IO20/RXD_11")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "21")
+			(name "ESP_EN")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "EN_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "22")
+			(name "FB_TRIM")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "SH")
+				(pinfunction "Shield_SH")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "5")
+				(pinfunction "H_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "5")
+				(pinfunction "H_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "GND_19")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "9")
+				(pinfunction "EPAD_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U5")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U6")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "U6")
+				(pin "12")
+				(pinfunction "GND_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "U6")
+				(pin "13")
+				(pinfunction "ADC3_13")
+				(pintype "input")
+			)
+			(node
+				(ref "U6")
+				(pin "15")
+				(pinfunction "ADC2_15")
+				(pintype "input")
+			)
+			(node
+				(ref "U6")
+				(pin "16")
+				(pinfunction "ADC1_16")
+				(pintype "input")
+			)
+			(node
+				(ref "U6")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U6")
+				(pin "7")
+				(pinfunction "SA0_7")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "24")
+			(name "H2S_ADC")
+			(class "Default")
+			(node
+				(ref "C17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "IO3_15")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "25")
+			(name "H2S_RAW")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "26")
+			(name "HAPTIC_EN")
+			(class "Default")
+			(node
+				(ref "R28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "IO10_10")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "27")
+			(name "HAPTIC_GATE")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "28")
+			(name "I2C_SCL")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "IO6_5")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U6")
+				(pin "4")
+				(pinfunction "SCL_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
+			(name "I2C_SDA")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "IO5_4")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U6")
+				(pin "6")
+				(pinfunction "SDA_6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "30")
+			(name "LD15_ESR")
+			(class "Default")
+			(node
+				(ref "C16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "31")
+			(name "LD33_ESR")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "32")
+			(name "MOTOR_LOW")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J8")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
+			(name "PACK_FUSED")
+			(class "Default")
+			(node
+				(ref "F1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
+			(name "PACK_NTC")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "TEMP_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "35")
+			(name "PACK_PLUS")
+			(class "Default")
+			(node
+				(ref "F1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "PANIC_N")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "IO8_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "37")
+			(name "STRAP_IO2")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "IO2_16")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "38")
+			(name "USB_DM")
+			(class "Default")
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "IO18_13")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "39")
+			(name "USB_DM_EXT")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "D-_2")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
+			(name "USB_DP")
+			(class "Default")
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "IO19_14")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "41")
+			(name "USB_DP_EXT")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "D+_3")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "42")
+			(name "V1V5")
+			(class "Default")
+			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "K1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "2")
+				(pinfunction "VO_2")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "43")
+			(name "V3V3")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J8")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "VO_2")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U6")
+				(pin "1")
+				(pinfunction "VDD_IO_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U6")
+				(pin "14")
+				(pinfunction "VDD_14")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U6")
+				(pin "8")
+				(pinfunction "CS_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "44")
+			(name "V5")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "K1")
+				(pin "10")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "2")
+				(pinfunction "H_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "S1")
+				(pin "3")
+				(pinfunction "A_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "S2")
+				(pin "3")
+				(pinfunction "A_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "VOUT_6")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "VI_3")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U5")
+				(pin "3")
+				(pinfunction "VI_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(J1-ID-Pad4)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "ID_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(J1-VBUS-Pad1)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "VBUS_1")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(J5-Pin_4-Pad4)")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(U2-~{CHRG}-Pad7)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "~{CHRG}_7")
+				(pintype "open_collector+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(U2-~{STDBY}-Pad6)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "~{STDBY}_6")
+				(pintype "open_collector+no_connect")
+			)
+		)
+		(net
+			(code "50")
+			(name "unconnected-(U6-INT1-Pad11)")
+			(class "Default")
+			(node
+				(ref "U6")
+				(pin "11")
+				(pinfunction "INT1_11")
+				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "51")
+			(name "unconnected-(U6-INT2-Pad9)")
+			(class "Default")
+			(node
+				(ref "U6")
+				(pin "9")
+				(pinfunction "INT2_9")
+				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "52")
+			(name "unconnected-(U6-NC-Pad2)")
+			(class "Default")
+			(node
+				(ref "U6")
+				(pin "2")
+				(pinfunction "NC_2")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "53")
+			(name "unconnected-(U6-NC-Pad3)")
+			(class "Default")
+			(node
+				(ref "U6")
+				(pin "3")
+				(pinfunction "NC_3")
+				(pintype "no_connect")
+			)
+		)
+	)
+)

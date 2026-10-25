@@ -1,2 +1,4 @@
 # Keep CAD exchange files byte-for-byte identical to the supplied originals.
 *.step -text
+# Preserve the imported KiCad package, exports, and verification records.
+hardware/kicad/** -text

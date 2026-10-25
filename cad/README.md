@@ -46,7 +46,7 @@ Component names and shapes describe placement. They do not establish exact senso
 | Blue | Gas-sensor VCC / power rail. |
 | Orange | Temperature-sensor data to controller GPIO. |
 
-Use these labels to follow the visual assembly. Electrical connectivity must be established by a verified schematic before fabrication.
+Use these labels to follow the visual assembly. The [Revision A KiCad project](../hardware/README.md) now documents the electrical interfaces separately; its pin map, component selections, and packaging still need to be reconciled with this presentation model before fabrication.
 
 ## Open the model
 
