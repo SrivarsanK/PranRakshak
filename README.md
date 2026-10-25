@@ -1,10 +1,12 @@
-﻿<p align="center"><img src="assets/readme/hero.svg" width="100%" alt="PRAN RAKSHAK — connected safety helmet concept for Vishwakarma Awards 2026–27, Stage 2, Team Codemium"></p>
+<p align="center">
+  <img src="assets/pran-rakshak-banner.png" alt="PRAN RAKSHAK concept banner based on the Stage 2 PDF: smart safety helmet, gas and dust sensing, worker localization, and offline gateway" width="100%">
+  <br><sub>Concept illustration based on the Stage 2 submission.</sub>
+</p>
 
-<h1 align="center">PRAN RAKSHAK</h1>
-<p align="center"><strong>Worker health, safety &amp; environmental hazard tracking.</strong><br>
-An offline-capable mine-safety system bringing hazard warnings, worker zones, and distress alerts into one proposed workflow.</p>
-
-<p align="center"><img src="assets/readme/badges.svg" width="738" alt="Stage 2 design and analysis · ESP32-C3 and Raspberry Pi · Native engineering files"></p>
+<p align="center">
+  <strong>Worker health, safety, and environmental hazard tracking.</strong><br>
+  Vishwakarma Awards 2026–27 · Stage 2 · Team Codemium
+</p>
 
 <p align="center">
   <a href="#the-problem">The problem</a> ·
