@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="738" height="34" viewBox="0 0 738 34" role="img" aria-labelledby="title desc">
+<title id="title">Project status and technology</title><desc id="desc">Stage 2 design and analysis; ESP32-C3 and Raspberry Pi; native engineering files available.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.title{font-weight:700}</style>
+<rect x="0" y="0" width="238" height="34" rx="6" fill="#0b1728" stroke="none"/><text x="13" y="22" font-size="12" fill="#55dacb" font-weight="700">STAGE 2 · DESIGN &amp; ANALYSIS</text><rect x="250" y="0" width="238" height="34" rx="6" fill="#0b1728" stroke="none"/><text x="263" y="22" font-size="12" fill="#f2f7fc" font-weight="700">ESP32-C3 + RASPBERRY PI</text><rect x="500" y="0" width="238" height="34" rx="6" fill="#0b1728" stroke="none"/><text x="513" y="22" font-size="12" fill="#f4c66a" font-weight="700">NATIVE ENGINEERING FILES</text></svg>

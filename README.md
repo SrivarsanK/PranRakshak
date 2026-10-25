@@ -1,311 +1,198 @@
-<p align="center">
-  <img src="assets/pran-rakshak-banner.png" alt="PRAN RAKSHAK concept banner based on the Stage 2 PDF: smart safety helmet, gas and dust sensing, worker localization, and offline gateway" width="100%">
-  <br><sub>Concept illustration based on the Stage 2 submission.</sub>
-</p>
+<p align="center"><img src="assets/readme/hero.svg" width="100%" alt="PRAN RAKSHAK — connected safety helmet concept for Vishwakarma Awards 2026–27, Stage 2, Team Codemium"></p>
 
-<p align="center">
-  <strong>Worker health, safety, and environmental hazard tracking.</strong><br>
-  Vishwakarma Awards 2026–27 · Stage 2 · Team Codemium
-</p>
+<h1 align="center">PRAN RAKSHAK</h1>
+<p align="center"><strong>Worker health, safety & environmental hazard tracking.</strong><br>
+An offline-capable mine-safety system bringing hazard warnings, worker zones, and distress alerts into one proposed workflow.</p>
 
-<p align="center">
-  <a href="#the-problem">The problem</a> ·
-  <a href="#system-architecture">Architecture</a> ·
-  <a href="#kicad-schematic">KiCad schematic</a> ·
-  <a href="#pcb-layout-draft">PCB layout</a> ·
-  <a href="#preliminary-enclosure-fea">FEA study</a> ·
-  <a href="#cad-and-design-evidence">CAD gallery</a> ·
-  <a href="cad/VKA2026.step">STEP model</a> ·
-  <a href="docs/stage-2-submission.pdf">Stage 2 submission</a> ·
-  <a href="#roadmap">Roadmap</a>
-</p>
+<p align="center"><img src="assets/readme/badges.svg" width="738" alt="Stage 2 design and analysis · ESP32-C3 and Raspberry Pi · Native engineering files"></p>
 
-## PRAN RAKSHAK
+<p align="center"><a href="#problem">Problem</a> · <a href="#solution">Solution</a> · <a href="#evidence">Stage 2 evidence</a> · <a href="#design">Hardware</a> · <a href="#fea">FEA</a> · <a href="#roadmap">Roadmap</a></p>
+<p align="center"><a href="docs/stage-2-submission-updated.pdf"><strong>Read the submission ↗</strong></a> &nbsp; | &nbsp; <a href="cad/VKA2026.step"><strong>Open the STEP model ↗</strong></a> &nbsp; | &nbsp; <a href="hardware/README.md"><strong>Explore KiCad files ↗</strong></a></p>
 
-PRAN RAKSHAK is a mine safety project designed to detect underground hazards, warn workers locally, and help rescue teams identify a worker's last-known zone. The proposed system combines helmet-mounted sensing, fixed monitoring nodes, and a Raspberry Pi gateway that can operate without a continuous internet connection.
+> **Stage 2 status:** Mechanical CAD, an editable schematic, a separate PCB draft, and a preliminary lid FEA study are available. Firmware, calibrated hardware, and field trials remain pending. The schematic and PCB are different variants and must be reconciled before fabrication.
 
-Its scope covers methane, carbon monoxide, and hydrogen sulfide monitoring, with dust exposure and mine-runoff quality monitoring included in the wider environmental design. A panic button and motion-based man-down detection support worker distress alerts.
+<a id="problem"></a>
+## <img src="assets/readme/hazard.svg" width="24" height="24" alt=""> The problem
 
-> **Current stage:** CAD, schematic, preliminary PCB design, and an assumption-based lid FEA study. Native files, numerical outputs, plots, and check reports are published. The schematic and PCB remain different design variants. Material and loading for the FEA are illustrative; firmware, calibration, and physical field validation remain pending.
+Underground workers need warnings where hazards occur, even when internet access is unavailable. The submission identifies three gaps in manual, fragmented monitoring:
 
-<p align="center">
-  <img src="assets/cad/assembly-wiring.jpeg" alt="CAD view of the sensor enclosure with an exploded lid, ESP32 board, gas sensor, power module, and color-coded wiring" width="100%">
-  <br><sub>Sensor-node assembly: enclosure, electronics, wiring, and removable lid shown in the CAD workspace.</sub>
-</p>
+<table>
+<tr>
+<td width="33%" valign="top">
+<h3 align="center"><img src="assets/readme/sensor.svg" width="24" height="24" alt=""><br>Invisible exposure</h3>
+<p align="center">Gas and respirable dust can build up between handheld inspections. Workers need local, timely warnings.</p>
+</td>
+<td width="33%" valign="top">
+<h3 align="center"><img src="assets/readme/zone.svg" width="24" height="24" alt=""><br>Uncertain location</h3>
+<p align="center">When a worker needs help, disconnected monitoring systems can leave rescue teams without a useful last-known zone.</p>
+</td>
+<td width="33%" valign="top">
+<h3 align="center"><img src="assets/readme/water.svg" width="24" height="24" alt=""><br>Environmental gaps</h3>
+<p align="center">Periodic runoff checks can miss contamination between samples. Water-quality monitoring forms part of the wider proposal.</p>
+</td>
+</tr>
+</table>
 
-## The problem
+**Designed for:** underground mine workers, ventilation officers, rescue teams, and environmental monitoring teams. The intended benefit is earlier awareness and more useful rescue information; impact has not yet been measured in a mine.
 
-Underground miners can encounter toxic gases and respirable dust in areas with intermittent communication and limited visibility. Manual checks leave gaps between readings. If a worker becomes unresponsive, a team also needs to know where to search.
+<a id="solution"></a>
+## <img src="assets/readme/network.svg" width="24" height="24" alt=""> The solution
 
-The Stage 2 submission identifies three connected monitoring gaps:
+PRAN RAKSHAK proposes helmet-mounted sensor nodes, fixed environmental nodes, and an on-site Raspberry Pi gateway. Worker nodes check local thresholds and provide warnings; the gateway brings telemetry, distress events, and last-seen zones together without depending on continuous internet access.
 
-- Gas and dust exposure can build up between handheld inspections.
-- Separate monitoring and communication systems delay distress alerts and worker location updates.
-- Mine runoff may reach surrounding waterways before manual water-quality checks identify contamination.
+<p align="center"><img src="assets/readme/architecture.svg" width="100%" alt="Proposed data flow: ESP32-C3 sensing and local alerts, Wi-Fi/MQTT network, Raspberry Pi offline supervision; firmware and network validation pending"></p>
 
-PRAN RAKSHAK is intended for miners, ventilation officers, environmental monitoring teams, and rescue squads working across tunnels and nearby catchment areas.
+1. **Sense:** acquire gas readings and motion/panic inputs with node identity and timestamps.
+2. **Warn locally:** drive vibration, display, or alarm outputs from threshold checks, including during gateway connection loss.
+3. **Coordinate:** send telemetry to a local gateway for rules, health checks, and offline records.
+4. **Locate by zone:** associate workers with nearby mapped nodes and retain last-seen information for supervisors.
 
-## The proposed solution
+**The integration idea:** connect exposure monitoring, worker distress, and zone information in one local workflow. Dust sensing is proposed in the schematic; runoff sensing and airflow-aware leak estimation remain wider design work. Wi-Fi/MQTT is the baseline; mesh routing and underground coverage still need implementation and testing.
 
-Helmet-mounted nodes monitor conditions close to each worker. Fixed nodes extend environmental coverage through the mine. Both feed a local gateway for logging and supervision, while node-level threshold checks support alarms during a gateway connection loss.
+<a id="evidence"></a>
+## <img src="assets/readme/evidence.svg" width="24" height="24" alt=""> Stage 2 · evidence for review
 
-| Capability | Proposed behavior |
-| --- | --- |
-| Hazard monitoring | Sample CH4, CO, and H2S; extend sensing to dust and runoff quality as those subsystems are defined. |
-| Worker warnings | Trigger local buzzer/vibration alerts and display warnings when configured thresholds are crossed. |
-| Emergency signaling | Send a manual panic event or an automatic man-down event after sustained inactivity. |
-| Underground localization | Associate workers with nearby node zones on a mapped tunnel layout; retain last-seen information. |
-| Offline supervision | Run the MQTT broker, rules, monitoring interface, and logs on an on-site Raspberry Pi. |
-| Fault visibility | Flag missing nodes, stale packets, sensor faults, and low-power conditions. |
+<p align="center"><img src="assets/readme/evidence-strip.svg" width="100%" alt="Published evidence: four schematic sheets, zero ERC errors with 68 warnings; four solved lid meshes; 7411 tetrahedra in the final mesh"></p>
 
-The submission also proposes airflow-aware leak-source estimation and early anomaly detection. These require ventilation measurements, calibration data, and validation beyond the current CAD model.
+Start with the submission, then inspect the native files and their check reports. Screenshots and previews are paired with editable sources wherever available.
 
-## System architecture
+| Review area | Open the evidence | What it establishes |
+| :--- | :--- | :--- |
+| **Project submission** | [Updated 29-page PDF](docs/stage-2-submission-updated.pdf) | Team concept, targets, BOM, maker journey, risks, and fabrication plan. |
+| **Mechanical design** | [STEP assembly](cad/VKA2026.step) · [CAD guide](cad/README.md) | Enclosure, lid, standoffs, component placement, and wiring geometry. Original parametric sketch history is not included. |
+| **Circuit design** | [Native KiCad project](hardware/kicad/PRAN_RAKSHAK.kicad_pro) · [Schematic PDF](hardware/kicad/Schematic_Review.pdf) · [ERC](hardware/kicad/ERC_Report.json) | Four editable sheets. Reproduced ERC: **0 electrical errors, 68 footprint warnings**, no excluded or ignored checks. |
+| **PCB draft** | [Native board](hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb) · [DRC review](hardware/pcb/review/README.md) | Partial routing. **5 errors, 56 warnings, and 33 unconnected items**; five default checks ignored, schematic parity unchecked. |
+| **Mechanical analysis** | [FEA report](simulation/lid-pressure/README.md) · [PDF report](docs/preliminary-lid-fea.pdf) · [Mesh statistics](simulation/lid-pressure/results/mesh_statistics.csv) | Four actual solves, selected-metric convergence, numerical checks, and raw outputs under recorded assumptions. |
+| **Reproducibility** | [Schematic ZIP](hardware/PRAN_RAKSHAK_KiCad.zip) · [PCB ZIP](hardware/PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip) · [FEA ZIP](simulation/PranRakshak_Preliminary_Lid_FEA.zip) | Downloadable packages for inspection and rerunning the mechanical study. |
 
-The diagram summarizes the proposed data flow in the submission. It does not represent software already included in this repository.
+<a id="design"></a>
+## <img src="assets/readme/sensor.svg" width="24" height="24" alt=""> Hardware & engineering design
 
-```mermaid
-flowchart TD
-    subgraph underground[Underground sensing]
-        gases["Gas sensors: CH4 / CO / H2S"]
-        distress["Motion sensor + panic button"]
-        helmet["Helmet node / ESP32-C3<br/>Threshold checks + timestamps"]
-        fixed["Fixed environmental nodes<br/>Gas / planned dust and runoff sensing"]
-        local["Local worker alert<br/>Buzzer / vibration / display"]
-        gases --> helmet
-        distress --> helmet
-        helmet --> local
-    end
+| Subsystem | Current design or proposal | Review focus |
+| :--- | :--- | :--- |
+| **Worker node** | ESP32-C3-WROOM-02-N4, boot/reset, native USB, battery monitoring | Firmware and bring-up pending. |
+| **Gas sensing** | MQ-4, MQ-7B conditioning/heater control, conditioned H2S interface | Calibration, heater power, and final H2S module/AFE selection. |
+| **Worker interaction** | LIS3DH, manual panic input, OLED, vibration driver | Man-down algorithm, thresholds, and false-alarm trials. |
+| **Environmental scope** | Proposed SPS30 dust interface; temperature/humidity component in CAD | Sensor suitability and packaging; runoff subsystem still unspecified. |
+| **Power** | Protected pack interface, TP4056 charging, charge/run switch, boost and regulated rails | Bench verification and endurance. |
+| **Local gateway** | Raspberry Pi 4, Mosquitto MQTT, microSD logging, display/siren | Proposed software and gateway wiring require implementation. |
+| **Enclosure** | STEP assembly with removable lid and mounting standoffs | Packaging, material choice, sensor access, sealing, and mounting. |
 
-    helmet --> network["Local wireless network<br/>Wi-Fi + MQTT / proposed mesh"]
-    fixed --> network
-    network --> gateway["Raspberry Pi 4<br/>Mosquitto MQTT broker"]
-    gateway --> rules["Threshold rules + health checks<br/>Timestamp validation"]
-    rules --> logs["Offline telemetry logs"]
-    rules --> supervisor["Supervisor interface<br/>OLED / siren / alerts"]
-    rules --> zones["Tunnel map + node zones<br/>Worker last-seen status"]
-    gateway -->|"Warnings over the local network"| helmet
-```
+### Circuit and PCB views
 
-1. A node captures sensor readings and attaches a timestamp and node identity.
-2. The controller checks local alarm conditions and sends telemetry over the local network.
-3. The gateway validates incoming data, applies rules, and records readings offline.
-4. Supervisors receive hazard and node-health information; worker positions are associated with mapped zones.
+| Four-sheet schematic · controller overview | Separate PCB carrier · draft |
+| :---: | :---: |
+| <a href="hardware/kicad/Schematic_Review.pdf"><img src="assets/schematic/esp32-c3-overview.png" width="560" alt="Main ESP32-C3 schematic sheet exported by KiCad"></a> | <a href="hardware/pcb/README.md"><img src="assets/pcb/pcb-overview.png" width="230" alt="Programmatic placement and copper preview of the partially routed PCB"></a> |
+| Native KiCad export; open the PDF for all four sheets. | Programmatic preview; open the native DRC report for findings. |
 
-Wi-Fi/MQTT is the baseline communication design. Multi-hop routing, Kinetic Mesh, and alternative radio fallbacks appear in the submission as proposed extensions; their implementation and underground coverage remain to be demonstrated.
+The schematic includes [controller](hardware/kicad/PRAN_RAKSHAK.kicad_sch), [power](hardware/kicad/Power.kicad_sch), [gas](hardware/kicad/Gas_Sensors.kicad_sch), and [user/environment](hardware/kicad/User_And_Environment.kicad_sch) sheets, with [BOM](hardware/kicad/BOM.csv) and [design notes](hardware/kicad/Design_Notes.md). Keep the local symbol library and all sheets together when opening the project in KiCad 10.
 
-## Hardware and software design
+**Integration gap:** the 52 × 88 mm, two-layer PCB is a separate carrier with 49 footprints and 27 named nets. It uses an ADS1115, different GPIO/sensor interfaces, and externally regulated 3.3 V/5 V supplies. It has no onboard charger or protection and no matching supplied schematic. Complete routing, assign/verify footprints, reconcile the variants, and clear the checks before fabrication.
 
-The table describes the four-sheet schematic design. The separate [PCB carrier draft](#pcb-layout-draft) uses a different ADC, GPIO map, and external power arrangement.
+<a id="cad"></a>
+## <img src="assets/readme/cad.svg" width="24" height="24" alt=""> CAD · inside the sensor pod
 
-| Subsystem | Requirement and four-sheet schematic design |
-| --- | --- |
-| Node controller | ESP32-C3 for sensor acquisition and wireless telemetry; Revision A uses ESP32-C3-WROOM-02-N4 with boot/reset, native USB, and battery ADC circuitry. |
-| Methane sensing | MQ-4 sensor, subject to calibration and heater-power validation. |
-| Carbon monoxide sensing | MQ-7 requirement; Revision A proposes MQ-7B with heater-rail selection and ADC conditioning. Its heating cycle limits fresh measurement timing. |
-| Hydrogen sulfide sensing | Electrochemical H2S requirement; Revision A provides an interface for a conditioned module. The exact cell/module and analog front end remain unresolved. |
-| Temperature/humidity | A sensor is represented in the supplied CAD assembly; compensation is discussed in the risk-mitigation plan. |
-| Motion and panic input | Revision A proposes LIS3DH motion sensing and a manual panic input. Man-down firmware and trials remain pending. |
-| Dust and runoff sensing | Revision A proposes an SPS30 dust interface. Runoff sensing remains outside the node schematic; final measurement methods require validation. |
-| Node power | Revision A includes a protected battery-pack interface, TP4056 charger, charge/run separation, 5 V boost, and regulated rails. Power and charging behavior require bench validation. |
-| Local gateway | Raspberry Pi 4 Model B, 4 GB RAM, with Mosquitto MQTT and local processing. |
-| Storage and outputs | Proposed 64 GB microSD logging, 1.3-inch OLED, and an 85 dB siren/alarm output. |
-| Mechanical design | Enclosure, lid, mounting standoffs, board placement, and wiring represented in the STEP assembly. |
+<p align="center"><a href="cad/VKA2026.step"><img src="assets/cad/assembly-wiring.jpeg" width="100%" alt="Original CAD workspace showing the enclosure, raised lid, controller, gas sensor, and internal wiring"></a><br><sub>Original CAD workspace capture. The exploded lid exposes the board placement and internal wiring.</sub></p>
 
-The STEP model is a mechanical presentation of one sensor pod. Its generic component geometry does not establish exact electronic part numbers or demonstrate the complete helmet, gateway, or multi-node installation.
+| Assembly overview | Component structure |
+| :---: | :---: |
+| [![Assembly overview](assets/cad/assembly-overview.jpeg)](assets/cad/assembly-overview.jpeg) | [![Enclosure and component browser](assets/cad/enclosure-components.jpeg)](assets/cad/enclosure-components.jpeg) |
 
-## KiCad schematic
+Import [`cad/VKA2026.step`](cad/VKA2026.step) into a STEP-compatible CAD application; units are millimetres. Measured geometry is **100 × 70 × 25 mm for the enclosure** and **100 × 70 × 3 mm for the lid**, with four 3.5 mm lid holes. The geometry represents a sensor pod; full helmet integration and the smaller submission target remain to be resolved.
 
-The [Revision A KiCad package](hardware/README.md) contains a four-sheet, editable ESP32-C3 node design. It includes project-local symbols, a reference-level BOM, the exported netlist, and electrical verification records. Proposed parts and unresolved interfaces are identified in its [design notes](hardware/kicad/Design_Notes.md).
+<a id="fea"></a>
+## <img src="assets/readme/chart.svg" width="24" height="24" alt=""> FEA · mesh refinement with raw results
 
-[![Main ESP32-C3 schematic sheet exported from KiCad](assets/schematic/esp32-c3-overview.png)](hardware/kicad/Schematic_Review.pdf)
+The supplied STEP lid was isolated and solved as a preliminary static, linear-elastic model. **Material remains undecided:** the study assumes an isotropic polymer with E = 2,000 MPa and ν = 0.35, a uniform 10 N downward force, and fully fixed screw-hole walls.
 
-*Main controller sheet. Open the [four-page schematic PDF](hardware/kicad/Schematic_Review.pdf) for readable details and the power, gas-sensor, and user/environment sheets.*
+[![Convergence plots from four finite-element solves](simulation/lid-pressure/results/plots/convergence.png)](simulation/lid-pressure/README.md)
 
-| Sheet | Contents |
-| --- | --- |
-| [PRAN_RAKSHAK.kicad_sch](hardware/kicad/PRAN_RAKSHAK.kicad_sch) | ESP32-C3 controller, boot/reset, native USB, battery monitoring, and child-sheet hierarchy. |
-| [Power.kicad_sch](hardware/kicad/Power.kicad_sch) | Protected pack interface, TP4056 charging, charge/run switch, boost converter, and regulators. |
-| [Gas_Sensors.kicad_sch](hardware/kicad/Gas_Sensors.kicad_sch) | MQ-4/MQ-7B signal conditioning, heater selection, and conditioned H2S module interface. |
-| [User_And_Environment.kicad_sch](hardware/kicad/User_And_Environment.kicad_sch) | Proposed SPS30 dust interface, LIS3DH accelerometer, OLED, panic input, and vibration-motor driver. |
+| Result under these assumptions | Value |
+| :--- | :--- |
+| Mesh sequence | 2,449 → 3,490 → 4,822 → 7,411 tetrahedra |
+| Final displacement model | 14,188 quadratic nodes · 42,564 degrees of freedom |
+| Centre deflection | **0.06623 mm** |
+| Final refinement change | **0.319%** centre deflection · **0.096%** fixed central stress measure |
+| Selected convergence criterion | Both measures changed by <2% for two successive refinements |
+| Numerical verification | Analytical uniaxial-tension check passed; force balance and free-DOF residual checked |
 
-Download the [complete KiCad ZIP](hardware/PRAN_RAKSHAK_KiCad.zip), or use the cloned repository. In KiCad 10, open [`hardware/kicad/PRAN_RAKSHAK.kicad_pro`](hardware/kicad/PRAN_RAKSHAK.kicad_pro), then open the schematic. Keep all four sheets, `PRAN.kicad_sym`, and `sym-lib-table` together.
+**Scope of the result:** convergence applies to the selected measures, not an absolute error bound or converged maximum clamp stress. No material strength or safety factor is established. The model excludes base flexibility, bolts/contact, gasket, impact, fatigue, and manufacturing anisotropy.
 
-| Design evidence | Result or file |
-| --- | --- |
-| Native KiCad ERC | **0 electrical errors, 68 footprint-review warnings, no exclusions or ignored checks**, reproduced with KiCad 10.0.7 after importing the package into this repository. |
-| Remaining schematic warnings | Unassigned footprints; footprint selection is still required for this schematic. Its ERC result does not validate the separate PCB draft. |
-| Verification record | [Original ERC JSON](hardware/kicad/ERC_Report.json) and [verification notes](hardware/kicad/Verification.md), which record 125 connection/structure checks. |
-| Bill of materials | [Full BOM](hardware/kicad/BOM.csv) and [short BOM with proposed selections](hardware/kicad/Short_BOM.md); prices have not been quoted. |
+[Read the PDF](docs/preliminary-lid-fea.pdf) · [Study and rerun instructions](simulation/lid-pressure/README.md) · [Editable assumptions](simulation/lid-pressure/study.json) · [Full results](simulation/lid-pressure/results/summary.json) · [Download all study files](simulation/PranRakshak_Preliminary_Lid_FEA.zip)
 
-The four-sheet Revision A design is a bench schematic. Its calculations estimate approximately **2.4–3.1 hours** of runtime under the stated load assumptions, below the eight-hour target. The proposed MQ-7B's **150-second heater cycle** also prevents a guaranteed fresh CO measurement within ten seconds across all phases. The H2S cell/AFE remains an open design item. See the [electrical design notes](hardware/kicad/Design_Notes.md) before building. The separate layout below has not been matched to this schematic.
+<a id="targets"></a>
+## <img src="assets/readme/zone.svg" width="24" height="24" alt=""> Targets & validation priorities
 
-## PCB layout draft
+These are **submission targets**, not measured product performance. They come from page 6 of the updated PDF.
 
-The [standalone PCB package](hardware/pcb/README.md) contains an editable **52 × 88 mm, two-layer carrier board** with 49 footprint instances and 27 named electrical nets. It places an ESP32-C3 module, ADS1115 external ADC, sensor headers, and alarm-driver circuitry, with preliminary copper routing and antenna keepouts.
+| Target | Current evidence / next validation |
+| :--- | :--- |
+| **<10 s** gas alert; **1 Hz** sampling | Firmware and calibrated latency trials pending. MQ-7B's 150 s heater cycle prevents guaranteeing a fresh CO reading within 10 s across all phases. |
+| **8 h** endurance on **3.7 V, 2,500 mAh** | Schematic calculations estimate **2.4–3.1 h** under their assumptions. Rework the power budget and measure runtime. |
+| **52 × 88 × 28 mm**, about **120 g**, **IP67** | Current enclosure is larger; mass and ingress protection are unverified. |
+| **≥7 days** offline logs | Implement and test gateway storage and recovery. |
+| **30 s** missing-node flag / man-down trigger | Test heartbeat loss, inactivity, and false alarms. |
+| **Nearest-node zone** localization | Map node positions and compare observed and reported zones. |
 
-<p align="center">
-  <a href="hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb"><img src="assets/pcb/pcb-overview.png" alt="Supplied placement and preliminary copper preview of the partially routed PRAN RAKSHAK PCB carrier draft" width="400"></a>
-  <br><sub>Supplied programmatic placement/copper preview. This is a layout draft, not a DRC screenshot or fabricated board.</sub>
-</p>
+Planned protections include sensor plausibility checks, stale-packet rejection, local alarms during connection loss, low-battery warnings, and watchdog recovery. [The evidence inventory](docs/design-notes.md) records unresolved requirements. Mine deployment requires further safety engineering and qualification; no intrinsic-safety, helmet, ingress, or mining-equipment certification is claimed.
 
-| PCB deliverable | Link or status |
-| --- | --- |
-| Editable board | [PRAN_RAKSHAK_RevA.kicad_pcb](hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb) — open directly in KiCad PCB Editor. |
-| Complete source package | [Download the original PCB ZIP](hardware/PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip). All seven supplied files are preserved. |
-| Components and connections | [PCB BOM](hardware/pcb/PRAN_RAKSHAK_RevA_BOM.csv) and [pad-to-net mapping](hardware/pcb/PRAN_RAKSHAK_RevA_Net_Mapping.csv). |
-| Original design records | [Supplied README](hardware/pcb/PRAN_RAKSHAK_RevA_README.md), [routing summary](hardware/pcb/PRAN_RAKSHAK_routing_status.txt), and [generator source](hardware/pcb/build_pran_pcb.py). |
-| Native KiCad review | [DRC JSON](hardware/pcb/review/DRC_Report.json), [review conditions](hardware/pcb/review/README.md), and [KiCad layer export](hardware/pcb/review/PCB_Layers.svg). |
-| DRC result | **61 rule violations: 5 errors and 56 warnings, plus 33 unconnected items.** Checked with KiCad 10.0.7 after filling zones in memory; the supplied board file was not changed. |
+### Budget to finalize
 
-This carrier is **not fabrication-ready**. It requires externally regulated 3.3 V and 5 V supplies and includes no battery charger or battery-protection circuit. Its ADS1115 interface, analog dust placeholder, GPIO assignments, and connector map differ from the four-sheet schematic. It has no matching native schematic in the supplied package; schematic/PCB parity has not been checked. Five default DRC checks remain ignored in this standalone-board review.
+Page 12 lists **₹13,630** across controllers, gas sensors, gateway, storage, alerts, and power, but the slide retains a **“Project Terraweed Example”** label. This is illustrative template material; a confirmed PRAN RAKSHAK budget is pending.
 
-Complete the routing, resolve DRC findings, verify footprints and power interfaces, and reconcile the board with a matching schematic before fabrication. The original routing summary is an algorithmic source record; the new native KiCad report records the integration review. Neither design is certified for explosive mine environments.
+Build the project budget from the [schematic BOM](hardware/kicad/BOM.csv) and [PCB BOM](hardware/pcb/PRAN_RAKSHAK_RevA_BOM.csv), including final sensors, PCB manufacture, enclosure, assembly, and testing. The procurement statement on page 12 and faculty sign-off on page 19 also appear on example-labeled slides, so they are excluded from verified project achievements.
 
-## Engineering targets
+<a id="roadmap"></a>
+## <img src="assets/readme/roadmap.svg" width="24" height="24" alt=""> Roadmap · design to demonstration
 
-These targets come from the project specification on page 7 of the [Stage 2 submission](docs/stage-2-submission.pdf). They have not been verified by measurements in this repository. The KiCad design notes identify current runtime and CO-sensor timing conflicts with these targets.
+- [x] Publish mechanical STEP assembly and CAD workspace evidence.
+- [x] Publish four-sheet KiCad schematic, BOM, and reproduced ERC.
+- [x] Publish standalone PCB draft and native DRC findings.
+- [x] Run preliminary lid FEA with four meshes, convergence plots, and raw outputs.
+- [ ] Reconcile CAD, schematic, and PCB; resolve routing, footprints, H2S interface, and power budget.
+- [ ] Build nodes and gateway; publish firmware, wiring, and timestamped telemetry.
+- [ ] Calibrate sensors and measure alerts, battery endurance, localization, and fault handling.
+- [ ] Validate enclosure/material choices and prepare the Stage 3 demonstration.
 
-| Parameter | Design target |
-| --- | --- |
-| Gas sampling | 1 Hz for CH4, CO, and H2S |
-| End-to-end gas alert | Less than 10 seconds between threshold crossing and helmet warning |
-| Battery endurance | 8 hours on a 3.7 V, 2500 mAh LiPo |
-| Average node power | Approximately 1 W, with sensor-heater duty cycling proposed |
-| Wearable pod envelope | Approximately 52 × 88 × 28 mm and 120 g target; STEP inspection gives a 100 × 70 × 25 mm enclosure and 100 × 70 × 3 mm lid, so packaging remains to be reconciled |
-| Ingress protection | IP67 target; no ingress-test evidence supplied |
-| Offline logging | At least 7 days at the local gateway |
-| Missing-node detection | Flag a node within 30 seconds of lost contact |
-| Man-down detection | Trigger after 30 seconds without motion |
-| Worker localization | Nearest-node zone on a mapped tunnel network |
+| Submission schedule | Planned milestone |
+| :--- | :--- |
+| **October 2026** | Finalize hardware, procure parts, and bench-calibrate sensors. |
+| **November 2026** | Assemble four nodes and helmet unit; bring up gateway and local alarms. |
+| **December 2026** | Test communication loss, man-down detection, watchdogs, brownouts, and zone localization. |
+| **January 2027** | Endurance/drift trials, tuning, and demonstration evidence. |
 
-## CAD and design evidence
-
-The three supplied screenshots retain the CAD application's component browser and workspace. They show the enclosure arrangement and assembly structure at the time of capture.
-
-| Assembly overview | Enclosure and component tree |
-| --- | --- |
-| [![Assembly overview with the lid raised above the sensor enclosure](assets/cad/assembly-overview.jpeg)](assets/cad/assembly-overview.jpeg) | [![CAD component browser showing enclosure, standoffs, controller, and sensor components](assets/cad/enclosure-components.jpeg)](assets/cad/enclosure-components.jpeg) |
-| Board placement, gas-sensor module, internal wiring, and exploded lid. | Enclosure and mounting components visible alongside the assembly. |
-
-The full-width image near the top shows the wiring in greater detail. Open any screenshot to inspect it at its original resolution.
-
-### Download and inspect the model
-
-- [Download VKA2026.step](https://github.com/SrivarsanK/PranRakshak/raw/refs/heads/main/cad/VKA2026.step)
-- [Browse the model in this repository](cad/VKA2026.step)
-- [Read the CAD component guide and provenance notes](cad/README.md)
-
-Clone the repository to keep the model and its documentation together:
+<a id="files"></a>
+## <img src="assets/readme/evidence.svg" width="24" height="24" alt=""> Explore the repository
 
 ```bash
 git clone https://github.com/SrivarsanK/PranRakshak.git
 cd PranRakshak
 ```
 
-Import `cad/VKA2026.step` into a STEP-compatible CAD application such as Fusion, FreeCAD, or SolidWorks. Units are millimetres. With the lid in its exploded position, inspect the enclosure, component placement, standoffs, and wiring.
+| Folder | Contents |
+| :--- | :--- |
+| [`cad/`](cad/) | STEP assembly and geometry/provenance notes. |
+| [`hardware/kicad/`](hardware/kicad/) | Four-sheet schematic project, symbols, BOM, netlist, and ERC. |
+| [`hardware/pcb/`](hardware/pcb/) | Separate PCB draft, source records, and native DRC review. |
+| [`simulation/lid-pressure/`](simulation/lid-pressure/) | Assumptions, solver, reports, meshes, fields, and plots. |
+| [`assets/`](assets/) | Original CAD/electronics views, concept artwork, and generated SVGs. |
+| [`docs/`](docs/) | Updated submission, FEA PDF, evidence inventory, and visual provenance. |
 
-The supplied file is a STEP assembly exchange model. The originating application's editable sketches and parametric feature history are separate deliverables and are not included here.
+For offline inspection, use the ZIP packages in the [evidence index](#evidence). No firmware or deployable gateway application is included yet.
 
-## Preliminary enclosure FEA
+<a id="team"></a>
+## <img src="assets/readme/team.svg" width="24" height="24" alt=""> Team & acknowledgements
 
-An [actual numerical lid-pressure study](simulation/lid-pressure/README.md) has been run using the lid extracted from the STEP assembly. Material and service loading are undecided, so the study uses an **assumed isotropic polymer (E=2000 MPa, ν=0.35), a uniform 10 N downward force, and idealized fixed screw-hole walls**. It is a preliminary setup, with no material-strength or safety pass claimed.
+| | |
+| :--- | :--- |
+| **Team** | Codemium |
+| **Team leader** | Kaaviya Varshini V |
+| **Team ID** | VK26-IITH-SM-0275 |
+| **Event** | Vishwakarma Awards 2026–27 · Stage 2 |
+| **Theme 5** | Sustainable Mining: Worker Health, Safety & Environmental Hazard Tracking |
 
-[![Mesh-refinement plots from four actual finite-element solves](simulation/lid-pressure/results/plots/convergence.png)](simulation/lid-pressure/Report.html)
+The [updated submission](docs/stage-2-submission-updated.pdf) supplies the concept and targets. Native artifacts and their review records establish current engineering status; template examples are excluded from achievement claims. See [source mapping and evidence notes](docs/design-notes.md).
 
-| Study output | Published result |
-| --- | --- |
-| Geometry | Actual lid: 100 × 70 × 3 mm, four 3.5 mm holes. |
-| Solves | Four meshes: 2,449, 3,490, 4,822, and 7,411 tetrahedra. Final mesh: 14,188 quadratic displacement nodes and 42,564 DOFs. |
-| Conditional centre deflection | 0.06623 mm under the assumed material, supports, and 10 N load. |
-| Selected convergence check | Centre deflection and a fixed central stress-probe measure each changed by less than 2% for two successive refinements; final changes were 0.319% and 0.096%. |
-| Numerical checks | Analytical uniaxial-tension solver/probe check passed; force balance and free-DOF residual checked for each lid solve. |
-| Files | [Visual report](simulation/lid-pressure/Report.html), [detailed study](simulation/lid-pressure/README.md), [mesh statistics CSV](simulation/lid-pressure/results/mesh_statistics.csv), [editable assumptions](simulation/lid-pressure/study.json), and [complete study ZIP](simulation/PranRakshak_Preliminary_Lid_FEA.zip). |
+Visual organization is inspired by [REACH by dmunish](https://github.com/dmunish/reach#readme). All SVG artwork here is original to PRAN RAKSHAK; the helmet graphic illustrates the concept. [SVG source and design notes](assets/readme/README.md) explain the visual system. The earlier [PDF-inspired concept illustration](assets/pran-rakshak-banner.png) and its [provenance](docs/banner-design.md) are retained.
 
-Tagged Gmsh meshes, VTU fields, full solution coefficients, mesher logs, and source code are included. Convergence applies to the two selected measures; it is not an absolute error bound or proof that clamp-region maximum stress has converged. This isolated-lid static study establishes no drop resistance, enclosure sealing, helmet compliance, or intrinsic-safety certification.
-
-## Safety and reliability plan
-
-The submission describes the following protections for implementation and testing:
-
-| Failure condition | Planned response |
-| --- | --- |
-| Sensor drift, failure, or a stuck reading | Calibration checks, plausibility checks, and an explicit sensor-fault alert. |
-| Node loses its gateway connection | Continue local threshold alarms; retry communication and flag the missing node at the gateway. |
-| Stale or clock-skewed telemetry | Timestamp packets and reject stale data before localization; the FMEA proposes a 10-second cutoff. |
-| Low battery or brownout | Monitor supply state, issue a low-power warning, and test watchdog/reset behavior. |
-| Gateway failure | Preserve node-level alarms and identify loss of central monitoring. |
-| Ventilation changes or poor node placement | Update the tunnel map and airflow assumptions, then repeat localization tests. |
-
-Intrinsic safety, flame protection, enclosure sealing, and impact resistance require further engineering and test evidence. No mining-equipment certification is claimed by the materials in this repository.
-
-## Roadmap
-
-The schedule below follows the submission's October 2026–January 2027 fabrication plan. Schematic and standalone PCB drafts are now published, along with ERC and DRC evidence. Matching the two designs, completing routing, resolving checks, procurement, and calibration remain open.
-
-| Period | Planned work | Evidence to publish |
-| --- | --- | --- |
-| October 2026 | Reconcile the schematic and PCB variants, complete routing, resolve footprints and open interfaces, procure components, and bench-calibrate sensors. | Native schematic and PCB drafts, BOMs, ERC, and failing DRC report published; final design, quotes, and calibration records pending. |
-| November 2026 | Assemble four sensor nodes and the helmet unit; bring up the Pi gateway, broker, display, and alarms. | Assembly photos, firmware, gateway configuration, and timestamped telemetry. |
-| December 2026 | Test connectivity, node loss, man-down detection, watchdogs, brownouts, and corridor localization. | Integration logs and measured alert/localization behavior. |
-| January 2027 | Run endurance and drift tests, tune the system, and prepare the Stage 3 demonstration. | Battery measurements, soak-test records, and demonstration evidence. |
-
-## Repository contents
-
-```text
-PranRakshak/
-├── README.md
-├── assets/
-│   ├── pran-rakshak-banner.png
-│   ├── cad/
-│   │   ├── assembly-wiring.jpeg
-│   │   ├── assembly-overview.jpeg
-│   │   └── enclosure-components.jpeg
-│   ├── schematic/
-│   │   └── esp32-c3-overview.png
-│   └── pcb/
-│       └── pcb-overview.png
-├── cad/
-│   ├── README.md
-│   └── VKA2026.step
-├── hardware/
-│   ├── README.md
-│   ├── PRAN_RAKSHAK_KiCad.zip
-│   ├── PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip
-│   ├── kicad/                    # Four-sheet schematic project and verification records
-│   └── pcb/                      # Separate carrier board, source files, and native DRC review
-├── simulation/
-│   ├── PranRakshak_Preliminary_Lid_FEA.zip
-│   └── lid-pressure/             # Assumptions, solver, report, meshes, fields, and convergence plots
-└── docs/
-    ├── banner-design.md
-    ├── design-notes.md
-    └── stage-2-submission.pdf
-```
-
-For the evidence inventory, source-page mapping, and unresolved specification details, see [design notes](docs/design-notes.md).
-
-## Team and submission
-
-| Field | Details |
-| --- | --- |
-| Project | PRAN RAKSHAK |
-| Team | Codemium |
-| Team leader | Kaaviya Varshini V |
-| Team ID | VK26-IITH-SM-0275 |
-| Event | Vishwakarma Awards 2026–27, Stage 2 |
-| Theme | Theme 5: Sustainable Mining — Worker Health, Safety & Environmental Hazard Tracking |
-
-## Sources and acknowledgements
-
-The team's [Stage 2 submission PDF](docs/stage-2-submission.pdf) supplies the project scope and specifications; the CAD screenshots and STEP model document the supplied design. Template examples are excluded as evidence of completed work.
-
-The [Revision A electrical design notes](hardware/kicad/Design_Notes.md) document the KiCad schematic's engineering choices, calculations, and component datasheet references. These proposed choices are distinguished from the submission's requirements.
-
-The separate PCB package was supplied through [Explain KiCad EDA Layout](https://chatgpt.com/share/6ade29ec-7dcc-83ee-a8ff-30b51f544990). Its [source README](hardware/pcb/PRAN_RAKSHAK_RevA_README.md) records the carrier-board assumptions; the [repository review](hardware/pcb/review/README.md) adds the native KiCad DRC result.
-
-The [preliminary FEA report](simulation/lid-pressure/README.md) records the mechanical study assumptions, source-geometry hash, solver versions, numerical checks, and method references.
-
-The banner is an AI-generated concept illustration derived from the PDF's mining-safety concept and architecture. Its [design notes and generation prompt](docs/banner-design.md) record the source pages.
-
-The README's visual organization takes inspiration from [REACH by dmunish](https://github.com/dmunish/reach#readme).
+<p align="center"><sub>Team Codemium · Engineering toward safer underground work.</sub></p>

@@ -1,5 +1,6 @@
 # Keep CAD exchange files byte-for-byte identical to the supplied originals.
 *.step -text
+*.pdf binary
 # Preserve the imported KiCad package, exports, and verification records.
 hardware/kicad/** -text whitespace=cr-at-eol
 # Preserve the separately supplied PCB draft and its source records.

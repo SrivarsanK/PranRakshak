@@ -2,9 +2,27 @@
 
 [Project README](../README.md) · [Stage 2 submission](stage-2-submission.pdf) · [CAD guide](../cad/README.md) · [KiCad package](../hardware/README.md)
 
-These notes explain how the project description was assembled from the submission, CAD assets, four-sheet schematic, and separate PCB carrier draft. Page numbers refer to the 26-page submission PDF.
+These notes explain how the project description was assembled from the submissions, CAD assets, four-sheet schematic, and separate PCB carrier draft.
 
-## Source map
+## Updated submission · 25 October 2026
+
+The current README uses the [updated 29-page submission](stage-2-submission-updated.pdf), supplied as `Vishwakarma Awards 2026-27 Stage 2 Submission Template.pptx-1.pdf`. The earlier 26-page PDF remains at its original path so historical references and banner provenance stay intact.
+
+| Updated pages | Use in the README |
+| --- | --- |
+| 1–5 | Identity, mining problem, intended beneficiaries, and proposed worker journey. |
+| 6–7, 9 | Proposed architecture, targets, and hardware selection. |
+| 11–12 | Electronics narrative and an illustrative ₹13,630 BOM. Visual review confirms page 12 retains a “Project Terraweed Example” label; cost and procurement claims are excluded as verified achievements. |
+| 13–18 | Repository links and CAD, schematic, PCB, and FEA evidence slides. Page 14's local computer URL is not a portable report link; the README links the repository's FEA report and PDF. |
+| 19 | Maker-journey narrative on a “Project Terraweed Example” slide. The sign-off and performance statements are excluded as verified achievements. |
+| 20–26 | Planned safeguards, FMEA, fabrication schedule, technical risks, and proposed mitigations. |
+| 27–29 | References and image sources retained in the supplied PDF. |
+
+Pages 8, 10, 12, and 19 are still labeled as examples. Their rover content, latency, runtime, drop-test, cost, procurement, sign-off, and enclosure-performance claims are excluded as demonstrated PRAN RAKSHAK achievements. The native ERC, failing DRC, and assumption-based FEA records remain the basis for the README's engineering status. Page 6 also retains a small rover-style specification box; only the project-specific target paragraph is used.
+
+The original SVG visual system is documented in [assets/readme](../assets/readme/README.md). It adapts the reference README's structure using original artwork and project-specific text. The [FEA PDF](preliminary-lid-fea.pdf) is an unchanged copy of the previously generated and visually verified five-page report.
+
+## Earlier 26-page submission · source map
 
 | Pages | Content used |
 | --- | --- |
@@ -60,7 +78,7 @@ The user confirmed that the mechanical material is undecided. A preliminary lid 
 - The four-sheet schematic notes identify remaining charging-fault and heater-supply concerns, including the TP4056 temperature-input short limitation. Footprints remain unassigned for 68 reviewed references in that schematic package.
 - The standalone PCB is a separate carrier design with an ADS1115, analog dust placeholder, external IMU header, different GPIOs, and no onboard charger/regulator/protection. It has not been cross-checked against the four-sheet schematic, which uses MCU ADC inputs and proposed SPS30/LIS3DH circuitry. Both source packages use the label Revision A; this does not establish electrical equivalence.
 - The PCB still has incomplete routing and native DRC findings, including thermal-relief errors and footprint-library review warnings. Its programmatic preview and routing-status text are source records, not a passed KiCad DRC or fabrication record.
-- Page 13's ₹13,630 total belongs to an example BOM. A confirmed project budget should be published after a project-specific BOM and quotes are available.
+- The earlier PDF's page 13 and updated PDF's page 12 show ₹13,630 on example-labeled slides. A confirmed project budget requires reconciled native BOMs and vendor quotes.
 - Intrinsic safety and sealing are design requirements. They are not established by the presence of enclosure geometry or a mitigation slide.
 - The lid FEA excludes base flexibility, bolted contacts/preload, gasket, helmet, electronics, impact, fatigue and manufacturing anisotropy. Selected displacement/stress-probe convergence does not establish convergence of clamp-region peak stress. Select real material properties, service loads and realistic supports, then validate before making a product decision.
 
