@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="assets/pran-rakshak-banner.svg" alt="PRAN RAKSHAK — offline safety monitoring for underground mines" width="100%">
+  <img src="assets/pran-rakshak-banner.png" alt="PRAN RAKSHAK concept banner based on the Stage 2 PDF: smart safety helmet, gas and dust sensing, worker localization, and offline gateway" width="100%">
+  <br><sub>Concept illustration based on the Stage 2 submission.</sub>
 </p>
 
 <p align="center">
@@ -185,7 +186,7 @@ The schedule below follows the submission's October 2026–January 2027 fabricat
 PranRakshak/
 ├── README.md
 ├── assets/
-│   ├── pran-rakshak-banner.svg
+│   ├── pran-rakshak-banner.png
 │   └── cad/
 │       ├── assembly-wiring.jpeg
 │       ├── assembly-overview.jpeg
@@ -194,6 +195,7 @@ PranRakshak/
 │   ├── README.md
 │   └── VKA2026.step
 └── docs/
+    ├── banner-design.md
     ├── design-notes.md
     └── stage-2-submission.pdf
 ```
@@ -214,5 +216,7 @@ For the evidence inventory, source-page mapping, and unresolved specification de
 ## Sources and acknowledgements
 
 The team's [Stage 2 submission PDF](docs/stage-2-submission.pdf) supplies the project scope and specifications; the CAD screenshots and STEP model document the supplied design. Template examples are excluded as evidence of completed work.
+
+The banner is an AI-generated concept illustration derived from the PDF's mining-safety concept and architecture. Its [design notes and generation prompt](docs/banner-design.md) record the source pages.
 
 The README's visual organization takes inspiration from [REACH by dmunish](https://github.com/dmunish/reach#readme).
