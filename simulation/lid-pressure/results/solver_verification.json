@@ -1,0 +1,6 @@
+{
+  "test": "Unit-cube uniaxial traction with analytical Poisson contraction",
+  "relative_displacement_error": 2.419672578124446e-15,
+  "maximum_stress_component_error_mpa": 8.215650382226158e-15,
+  "passed": true
+}

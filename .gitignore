@@ -6,3 +6,8 @@
 *.lck
 _autosave-*.kicad_sch
 **/*-backups/
+
+# Local Python environments and bytecode
+.venv-fea/
+__pycache__/
+*.pyc

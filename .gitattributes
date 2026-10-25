@@ -6,3 +6,6 @@ hardware/kicad/** -text whitespace=cr-at-eol
 hardware/pcb/** -text whitespace=cr-at-eol
 # Keep native KiCad SVG plotting whitespace as exported.
 hardware/pcb/review/*.svg -whitespace
+# Preserve numerical files and their recorded SHA-256 checksums.
+simulation/** -text whitespace=cr-at-eol
+simulation/lid-pressure/results/** -whitespace

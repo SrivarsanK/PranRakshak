@@ -1,0 +1,227 @@
+{
+  "configuration": {
+    "name": "Preliminary enclosure-lid pressure study",
+    "status": "Assumed material and loading; not a qualification test",
+    "source_step": "../../cad/VKA2026.step",
+    "body_name_contains": "Lid (exploded)",
+    "youngs_modulus_mpa": 2000.0,
+    "poisson_ratio": 0.35,
+    "material_description": "Illustrative homogeneous isotropic linear-elastic polymer; no material grade or print process selected",
+    "total_downward_force_n": 10.0,
+    "load_description": "Uniform downward traction on the full top face, normalized to a total 10 N on each mesh",
+    "support_description": "All three displacement components fixed on the four cylindrical screw-hole walls; idealized rigid attachment",
+    "mesh_sizes_mm": [
+      10.0,
+      8.0,
+      6.0,
+      4.0,
+      3.0,
+      2.5
+    ],
+    "maximum_displacement_dofs": 90000,
+    "comparison_tolerance_percent": 2.0,
+    "required_successive_comparisons": 2,
+    "minimum_mesh_levels": 4,
+    "stress_probe_offsets_mm": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "stress_probe_depth_fraction": 0.1,
+    "limitations": [
+      "Material constants and load are illustrative assumptions, not measured properties or specified service conditions.",
+      "Screw-hole supports are fully fixed; bolts, preload, contact, gasket and enclosure flexibility are not modeled.",
+      "Only the lid is analyzed; electronics, enclosure base, helmet and mounting assembly are excluded.",
+      "Linear, static, small-displacement elasticity only; no impact, drop, creep, fatigue, plasticity, thermal, sealing or intrinsic-safety qualification.",
+      "No material strength has been selected, so no safety factor or strength pass/fail is calculated.",
+      "A successive-mesh comparison is not an absolute error estimate or experimental validation."
+    ]
+  },
+  "geometry": {
+    "source_step_sha256": "8857d052af91eca43b5cf8fd16ea1c35b9f05d296f065b5a0be92e9c094a27be",
+    "source_body_name": "Shapes/MineSense_Presentation_Assembly/Lid (exploded)/Lid (exploded)",
+    "original_bounds_mm": [
+      -1e-07,
+      -1e-07,
+      36.9999999,
+      100.0000001,
+      70.0000001,
+      40.0000001
+    ],
+    "z_translation_mm": -37.0,
+    "analysis_bounds_mm": [
+      -0.0,
+      -0.0,
+      -0.0,
+      100.0,
+      70.0,
+      3.0
+    ],
+    "dimensions_mm": [
+      100.0,
+      70.0,
+      3.0
+    ],
+    "cad_volume_mm3": 20884.546469980578,
+    "screw_holes": [
+      {
+        "center_mm": [
+          7.0000000000001155,
+          7.0,
+          1.5
+        ],
+        "radius_mm": 1.75
+      },
+      {
+        "center_mm": [
+          93.00000000000011,
+          7.0,
+          1.5
+        ],
+        "radius_mm": 1.75
+      },
+      {
+        "center_mm": [
+          7.0000000000001155,
+          63.0,
+          1.5
+        ],
+        "radius_mm": 1.75
+      },
+      {
+        "center_mm": [
+          93.00000000000011,
+          63.0,
+          1.5
+        ],
+        "radius_mm": 1.75
+      }
+    ]
+  },
+  "levels": [
+    {
+      "level": "mesh_01",
+      "target_mesh_size_mm": 10.0,
+      "tetrahedra": 2449,
+      "geometric_vertices": 772,
+      "p2_nodes": 4630,
+      "displacement_dofs": 13890,
+      "constrained_dofs": 2880,
+      "loaded_area_mm2": 6963.250000000014,
+      "pressure_mpa": 0.001436111011381177,
+      "applied_force_z_n": -10.0,
+      "support_reaction_z_n": 10.000000000006917,
+      "force_balance_relative_error": 8.534421085137952e-13,
+      "free_dof_relative_residual": 7.857730181172429e-11,
+      "center_uz_mm": -0.06369658821759701,
+      "max_displacement_at_p2_nodes_mm": 0.0636751426274854,
+      "central_patch_mean_vm_mpa": 0.23238726477780636,
+      "central_patch_min_vm_mpa": 0.2269225662400974,
+      "central_patch_max_vm_mpa": 0.24066310148874362,
+      "global_quadrature_max_vm_mpa": 2.688983938379942,
+      "strain_energy_n_mm": 0.15925918465642933,
+      "solve_and_postprocess_seconds": 5.355123800000001,
+      "quality_min_SICN": 0.1758345438284286,
+      "quality_p05_SICN": 0.38713695656156805,
+      "quality_mean_SICN": 0.6696203061251875,
+      "deflection_change_percent": null,
+      "probe_stress_change_percent": null
+    },
+    {
+      "level": "mesh_02",
+      "target_mesh_size_mm": 8.0,
+      "tetrahedra": 3490,
+      "geometric_vertices": 1062,
+      "p2_nodes": 6473,
+      "displacement_dofs": 19419,
+      "constrained_dofs": 2880,
+      "loaded_area_mm2": 6963.250000000014,
+      "pressure_mpa": 0.001436111011381177,
+      "applied_force_z_n": -10.0,
+      "support_reaction_z_n": 9.99999999998488,
+      "force_balance_relative_error": 1.6210992662157838e-12,
+      "free_dof_relative_residual": 9.062411902648865e-11,
+      "center_uz_mm": -0.06538446022846699,
+      "max_displacement_at_p2_nodes_mm": 0.0653697401978781,
+      "central_patch_mean_vm_mpa": 0.23819229170987943,
+      "central_patch_min_vm_mpa": 0.23277389556743006,
+      "central_patch_max_vm_mpa": 0.24409142775643378,
+      "global_quadrature_max_vm_mpa": 3.0782347644313037,
+      "strain_energy_n_mm": 0.16411391401232492,
+      "solve_and_postprocess_seconds": 8.307948200001192,
+      "quality_min_SICN": 0.3417149100967263,
+      "quality_p05_SICN": 0.5102166631395353,
+      "quality_mean_SICN": 0.7345446333774444,
+      "deflection_change_percent": 2.5814574364798615,
+      "probe_stress_change_percent": 2.4371178808521883
+    },
+    {
+      "level": "mesh_03",
+      "target_mesh_size_mm": 6.0,
+      "tetrahedra": 4822,
+      "geometric_vertices": 1508,
+      "p2_nodes": 9116,
+      "displacement_dofs": 27348,
+      "constrained_dofs": 2880,
+      "loaded_area_mm2": 6963.250000000014,
+      "pressure_mpa": 0.001436111011381177,
+      "applied_force_z_n": -10.0,
+      "support_reaction_z_n": 10.000000000032827,
+      "force_balance_relative_error": 3.3538660180301397e-12,
+      "free_dof_relative_residual": 9.768391585654684e-11,
+      "center_uz_mm": -0.06601952688912259,
+      "max_displacement_at_p2_nodes_mm": 0.06600499038112079,
+      "central_patch_mean_vm_mpa": 0.24146463685117547,
+      "central_patch_min_vm_mpa": 0.24030167629646856,
+      "central_patch_max_vm_mpa": 0.24232392100371603,
+      "global_quadrature_max_vm_mpa": 2.928294918038461,
+      "strain_energy_n_mm": 0.16590321940303812,
+      "solve_and_postprocess_seconds": 18.652157200000147,
+      "quality_min_SICN": 0.3246601827521212,
+      "quality_p05_SICN": 0.5691358687904825,
+      "quality_mean_SICN": 0.7814802027976104,
+      "deflection_change_percent": 0.9619376123706169,
+      "probe_stress_change_percent": 1.3552067847156104
+    },
+    {
+      "level": "mesh_04",
+      "target_mesh_size_mm": 4.0,
+      "tetrahedra": 7411,
+      "geometric_vertices": 2353,
+      "p2_nodes": 14188,
+      "displacement_dofs": 42564,
+      "constrained_dofs": 2880,
+      "loaded_area_mm2": 6963.250000000014,
+      "pressure_mpa": 0.001436111011381177,
+      "applied_force_z_n": -10.0,
+      "support_reaction_z_n": 10.000000000031775,
+      "force_balance_relative_error": 3.257309795479386e-12,
+      "free_dof_relative_residual": 1.3778177093849546e-10,
+      "center_uz_mm": -0.06623047597189817,
+      "max_displacement_at_p2_nodes_mm": 0.06623029840859201,
+      "central_patch_mean_vm_mpa": 0.24123343818624252,
+      "central_patch_min_vm_mpa": 0.23939634223931958,
+      "central_patch_max_vm_mpa": 0.24232270154050312,
+      "global_quadrature_max_vm_mpa": 2.9154801364326772,
+      "strain_energy_n_mm": 0.16652151292222556,
+      "solve_and_postprocess_seconds": 20.248438500000702,
+      "quality_min_SICN": 0.33796844175721025,
+      "quality_p05_SICN": 0.6275476024904654,
+      "quality_mean_SICN": 0.7857794744269188,
+      "deflection_change_percent": 0.31850757476827807,
+      "probe_stress_change_percent": 0.09584022292733008
+    }
+  ],
+  "successive_mesh_criterion_met": true,
+  "consecutive_comparisons_below_tolerance": 2,
+  "software": {
+    "gmsh": "4.15.2",
+    "scikit-fem": "12.0.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "meshio": "5.3.5"
+  },
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0"
+}

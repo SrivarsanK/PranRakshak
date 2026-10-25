@@ -1,0 +1,6 @@
+gmsh==4.15.2
+scikit-fem==12.0.2
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+meshio==5.3.5

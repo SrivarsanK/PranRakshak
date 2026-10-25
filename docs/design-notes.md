@@ -37,19 +37,22 @@ Page 7's small illustrated specification box includes rover-style payload, speed
 | [Standalone PCB draft](../hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb) | Partially routed 52 × 88 mm carrier board with its own ADC, GPIO map, and external-power assumptions. |
 | [PCB source package](../hardware/pcb/README.md) | Original board, preview, BOM, pad mapping, routing summary, generator, and source README. |
 | [Native PCB DRC review](../hardware/pcb/review/README.md) | 61 rule violations (5 errors, 56 warnings) and 33 unconnected items; report and review conditions included. |
+| [Preliminary lid FEA](../simulation/lid-pressure/README.md) | Actual linear-elastic solves under assumed material, loading and supports; tagged meshes, raw outputs, statistics and convergence plots. |
 
 The complete KiCad package from “Create ESP32-C3 KiCad schematic” is preserved under `hardware/kicad/`, with a matching downloadable ZIP. ERC was rerun on the repository copy with KiCad 10.0.7 and reproduced zero electrical errors, 68 `footprint_filter` warnings, no exclusions, and no ignored checks. PDF and netlist export also succeeded from that copy.
 
 The separate PCB package comes from [Explain KiCad EDA Layout](https://chatgpt.com/share/6ade29ec-7dcc-83ee-a8ff-30b51f544990). Its seven original files and ZIP are preserved. KiCad 10.0.7 loaded the board and ran DRC after filling zones in memory, without saving changes to the board. The result is 61 rule violations and 33 unconnected items. Five default checks remain ignored; no matching native schematic was supplied, so schematic parity was not tested.
 
-The earlier schematic's ERC result does not validate this PCB. A synchronized schematic/board pair, passing PCB DRC, original parametric CAD history, fabrication photos, FEA results, firmware, gateway source, sensor calibration data, and measured hardware performance remain pending.
+The earlier schematic's ERC result does not validate this PCB. A synchronized schematic/board pair, passing PCB DRC, original parametric CAD history, fabrication photos, firmware, gateway source, sensor calibration data, and measured hardware performance remain pending.
+
+The user confirmed that the mechanical material is undecided. A preliminary lid study therefore uses an explicitly assumed isotropic polymer, 10 N distributed force, and rigid screw-hole-wall supports. Four actual finite-element solves met the selected successive-mesh criterion for centre deflection and a fixed central stress measure. The study is numerical evidence under assumptions, not physical validation or a material-strength result.
 
 ## Specification details still to resolve
 
 - The current CAD assembly represents a generic ESP32 board, one gas-sensor assembly, and a temperature/humidity sensor. The electrical design now includes CH4/CO paths, a conditioned H2S interface, and proposed motion/panic circuitry. Component selection and physical packaging still need to be reconciled with the CAD model.
 - The main node target is an eight-hour shift. An example slide's claim of more than sixteen hours is excluded. Revision A's electrical calculations estimate approximately 2.4–3.1 hours under the documented assumptions. Measured battery endurance is pending.
 - The proposed MQ-7B heater cycle is 150 seconds, which conflicts with guaranteeing a fresh CO measurement within the submission's ten-second alert target across all phases. A 1 Hz ADC sampling rate does not resolve this sensing limitation.
-- The 52 × 88 × 28 mm envelope, approximately 120 g mass, and IP67 enclosure are targets. No dimension comparison, mass calculation, ingress test, or certification report has been supplied.
+- Geometry inspection measured the supplied enclosure at 100 × 70 × 25 mm and its lid at 100 × 70 × 3 mm. These differ from the 52 × 88 × 28 mm target. The approximately 120 g mass and IP67 rating remain targets; no selected material, mass validation, ingress test or certification report is supplied.
 - Worker location is specified as a nearest-node zone. Exact underground coordinates, leak-source accuracy, and rescue completion within five minutes have not been demonstrated.
 - MQTT telemetry and local alarms are the baseline proposal. The submission also discusses BLE, Kinetic Mesh, sub-GHz fallback, and predictive models. No corresponding network implementation or comparative test data is included.
 - Revision A proposes SPS30 for dust sensing and LIS3DH for motion; these are engineering selections, with measurement suitability and man-down behavior still to validate. Runoff sensors remain unspecified. The CAD temperature/humidity sensor does not substitute for either environmental subsystem.
@@ -59,6 +62,7 @@ The earlier schematic's ERC result does not validate this PCB. A synchronized sc
 - The PCB still has incomplete routing and native DRC findings, including thermal-relief errors and footprint-library review warnings. Its programmatic preview and routing-status text are source records, not a passed KiCad DRC or fabrication record.
 - Page 13's ₹13,630 total belongs to an example BOM. A confirmed project budget should be published after a project-specific BOM and quotes are available.
 - Intrinsic safety and sealing are design requirements. They are not established by the presence of enclosure geometry or a mitigation slide.
+- The lid FEA excludes base flexibility, bolted contacts/preload, gasket, helmet, electronics, impact, fatigue and manufacturing anisotropy. Selected displacement/stress-probe convergence does not establish convergence of clamp-region peak stress. Select real material properties, service loads and realistic supports, then validate before making a product decision.
 
 ## Planned validation evidence
 
@@ -67,6 +71,7 @@ The earlier schematic's ERC result does not validate this PCB. A synchronized sc
 | Schematic ERC | Published and reproduced: 0 electrical errors, 68 footprint-review warnings. Footprint resolution remains open. |
 | PCB DRC | Published: 61 rule violations (5 errors, 56 warnings), plus 33 unconnected items. Routing, footprint verification, and rule resolution remain open. |
 | Schematic/PCB reconciliation | No matching pair supplied. Reconcile ADC, GPIO, sensor, connector, and power choices before checking parity. |
+| Lid FEA mesh refinement | Published: four solved meshes, numerical checks and selected-metric convergence under recorded assumptions. Physical material/load/support validation remains open. |
 | Gas calibration and drift | Reference concentrations, sensor identification, conditions, error, and repeat readings. |
 | Alert latency | Timestamped threshold crossing and observed local warning, compared with the under-10-second target. |
 | Node loss | Last received heartbeat and time the gateway marks the node missing. |

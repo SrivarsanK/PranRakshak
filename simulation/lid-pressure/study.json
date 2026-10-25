@@ -1,0 +1,27 @@
+{
+  "name": "Preliminary enclosure-lid pressure study",
+  "status": "Assumed material and loading; not a qualification test",
+  "source_step": "../../cad/VKA2026.step",
+  "body_name_contains": "Lid (exploded)",
+  "youngs_modulus_mpa": 2000.0,
+  "poisson_ratio": 0.35,
+  "material_description": "Illustrative homogeneous isotropic linear-elastic polymer; no material grade or print process selected",
+  "total_downward_force_n": 10.0,
+  "load_description": "Uniform downward traction on the full top face, normalized to a total 10 N on each mesh",
+  "support_description": "All three displacement components fixed on the four cylindrical screw-hole walls; idealized rigid attachment",
+  "mesh_sizes_mm": [10.0, 8.0, 6.0, 4.0, 3.0, 2.5],
+  "maximum_displacement_dofs": 90000,
+  "comparison_tolerance_percent": 2.0,
+  "required_successive_comparisons": 2,
+  "minimum_mesh_levels": 4,
+  "stress_probe_offsets_mm": [-2.0, 0.0, 2.0],
+  "stress_probe_depth_fraction": 0.1,
+  "limitations": [
+    "Material constants and load are illustrative assumptions, not measured properties or specified service conditions.",
+    "Screw-hole supports are fully fixed; bolts, preload, contact, gasket and enclosure flexibility are not modeled.",
+    "Only the lid is analyzed; electronics, enclosure base, helmet and mounting assembly are excluded.",
+    "Linear, static, small-displacement elasticity only; no impact, drop, creep, fatigue, plasticity, thermal, sealing or intrinsic-safety qualification.",
+    "No material strength has been selected, so no safety factor or strength pass/fail is calculated.",
+    "A successive-mesh comparison is not an absolute error estimate or experimental validation."
+  ]
+}

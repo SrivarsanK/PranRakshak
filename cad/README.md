@@ -14,6 +14,8 @@
 | Size | 1,406,956 bytes |
 | Format | ISO 10303-21 STEP; `AUTOMOTIVE_DESIGN` / AP214 schema |
 | Declared length unit | Millimetres |
+| Inspected enclosure envelope | 100 × 70 × 25 mm |
+| Inspected lid envelope | 100 × 70 × 3 mm, with four 3.5 mm diameter holes |
 | Root product name | `MineSense_Presentation_Assembly` |
 | Product definitions | 75, including the root assembly; this is not a fabrication part count |
 | Assembly occurrence records | 74 |
@@ -71,4 +73,4 @@ The STEP file is copied without modification, including its embedded export time
 
 ## Scope of this evidence
 
-The published assets document a sensor-pod layout. They do not demonstrate the full multi-gas installation, completed helmet integration, operating firmware, battery endurance, ingress protection, or intrinsic-safety certification. The target dimensions in the submission have not been verified against the assembly geometry.
+The published assets document a sensor-pod layout. They do not demonstrate the full multi-gas installation, completed helmet integration, operating firmware, battery endurance, ingress protection, or intrinsic-safety certification. Geometry inspection for the [preliminary lid FEA](../simulation/lid-pressure/README.md) measured the actual envelopes above; the enclosure differs from the submission's 52 × 88 × 28 mm target.

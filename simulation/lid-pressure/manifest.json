@@ -1,0 +1,262 @@
+[
+  {
+    "path": "simulation/lid-pressure/build_report.py",
+    "bytes": 15365,
+    "sha256": "f804465960872006606759affdec4f20e564a36588ef423cea27f6134888d716"
+  },
+  {
+    "path": "simulation/lid-pressure/inspect_geometry.py",
+    "bytes": 800,
+    "sha256": "e60c05f2a91ccbf34d93081f112fc0ab09a370b464a93d8b5652d1f0b870234e"
+  },
+  {
+    "path": "simulation/lid-pressure/package_study.py",
+    "bytes": 1497,
+    "sha256": "c54b2b89c314ecfe0c6d15311697bfeb2d36dd89840e6de2ef1056d99936a388"
+  },
+  {
+    "path": "simulation/lid-pressure/README.md",
+    "bytes": 8289,
+    "sha256": "d056e49e1023ebde264603265ee994b85f275c2e5e7e0349f4c4835460a11132"
+  },
+  {
+    "path": "simulation/lid-pressure/Report.html",
+    "bytes": 6047,
+    "sha256": "a4b33d6bb9628ce35061f4fa4868de713989afd8d10a6be58f3d48eb26f6fe2c"
+  },
+  {
+    "path": "simulation/lid-pressure/requirements.txt",
+    "bytes": 92,
+    "sha256": "a1d2e8acdac9583b8939cdbf8e89039f88ef336ea5730d1270e69810eb0aed64"
+  },
+  {
+    "path": "simulation/lid-pressure/results/geometry.json",
+    "bytes": 1086,
+    "sha256": "104772dbd2e15635d6e7388c84ffb006b61432538f3f4e8f42f9981958f01495"
+  },
+  {
+    "path": "simulation/lid-pressure/results/lid.step",
+    "bytes": 29885,
+    "sha256": "107ae4f5957f6637a10e31a60ba6186feaed893cb440b012605477597dbc9680"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_01.vtu",
+    "bytes": 81434,
+    "sha256": "f03237e80af28535aa2ba875bd380fd430f4825d7c17cca1f0990c2a3cb7bf27"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_01_mesher.log",
+    "bytes": 7020,
+    "sha256": "193c0520094b4fffc3c8696cd55635fd5525748cfbd678183e2642e9e3a0e3a7"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_01_solution.npz",
+    "bytes": 90975,
+    "sha256": "0b1c056ad7155d64a7b550b81a607aeef686c0bed3f4e9736204d45241a5468c"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_01_statistics.json",
+    "bytes": 1009,
+    "sha256": "d50624d5cfb551fe88c86adfa357162580ebd63c4d595ee34b493ce114b17b97"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_01_surface.npz",
+    "bytes": 28102,
+    "sha256": "922911b4f946541c1ee32e1df6e010069a0f86b4c792df58b6f3d2b7e1adf38d"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_02.vtu",
+    "bytes": 119171,
+    "sha256": "fff4e8106a16301b38354c8d8e274ec96dbc5b70da49cace696b44f4ebe06513"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_02_mesher.log",
+    "bytes": 7065,
+    "sha256": "2ffc4f7572ea86969a497481a49a19b8e9e25b1b9a97b541de9149e846a0c888"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_02_solution.npz",
+    "bytes": 133526,
+    "sha256": "e1b36a8a506dd39c4e011fc577ae48d573d40f8be6c10683fb3884785ebf71cb"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_02_statistics.json",
+    "bytes": 1009,
+    "sha256": "38e32cddddfce90a412cdedb7accfa25a24266842573ab21c68d2671cf0ecbb0"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_02_surface.npz",
+    "bytes": 42062,
+    "sha256": "3b2d3d25442b0d4f38ff956c3bbafb94f36f4fdb63fceeb2163a1628cc82896a"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_03.vtu",
+    "bytes": 170255,
+    "sha256": "5d35f3a44191b2e5476ae0589cefeed5ee23461d116312874c22710e22fcbaa3"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_03_mesher.log",
+    "bytes": 7076,
+    "sha256": "029579ec0b764a84deeccb9f00431da390f5a02d16c1aebd7edf4a4645fa609c"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_03_solution.npz",
+    "bytes": 194149,
+    "sha256": "3a5b2ab4567addb73bce2a252df518040a814782a4112bb6b4c338a7e585f75c"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_03_statistics.json",
+    "bytes": 1012,
+    "sha256": "fc7bf29aa000851f0ef5ec0118276e7794a2173346bca82b7682d758762295f6"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_03_surface.npz",
+    "bytes": 61818,
+    "sha256": "f55b7c8b46a9bf7da70f0913820f9d72a56e49ea6b74aee976aa692a084a0680"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_04.vtu",
+    "bytes": 264071,
+    "sha256": "ed42af384e90c304f0f004f1f49124a0d1c91f6fff0842275e4f05cdc3aa944c"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_04_mesher.log",
+    "bytes": 7463,
+    "sha256": "8a3e4f8912cc1b88efe474e2271a28d0ba1f31274e4afa390250181969d575d7"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_04_solution.npz",
+    "bytes": 310782,
+    "sha256": "ed19b3cde768003dde7597b0a30d82b244d041aa1d0c2d17af379c4f227da97d"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_04_statistics.json",
+    "bytes": 1015,
+    "sha256": "0ffa91c1280518f67bc2a9f52baae8f9007fc9003e8b0ec00c1fcf160c309262"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_04_surface.npz",
+    "bytes": 91137,
+    "sha256": "7a4a07865b66507fa1d5a1d77da0b7d77ad5f8472b0ecb25369de72ab65d9a6b"
+  },
+  {
+    "path": "simulation/lid-pressure/results/mesh_statistics.csv",
+    "bytes": 2097,
+    "sha256": "d52d9da2379ff7b8d032dee8252a0e8b02813446f8fe877dbe5a51acdb7aeb85"
+  },
+  {
+    "path": "simulation/lid-pressure/results/meshes/mesh_01.msh",
+    "bytes": 153570,
+    "sha256": "1f8509263f6696ba8225e100cbfdd5fbad5ea9d86cb0469537b46a8ab99f38c0"
+  },
+  {
+    "path": "simulation/lid-pressure/results/meshes/mesh_02.msh",
+    "bytes": 211018,
+    "sha256": "7ac3a08c4bec4c7e1b8a26ef3406a698aa3d0402c2212a941d524795297590f6"
+  },
+  {
+    "path": "simulation/lid-pressure/results/meshes/mesh_03.msh",
+    "bytes": 289018,
+    "sha256": "a68815a46a1e5971e86351d7a01e9bd1e0e3e42c741ed122fa74e61573d9095d"
+  },
+  {
+    "path": "simulation/lid-pressure/results/meshes/mesh_04.msh",
+    "bytes": 444066,
+    "sha256": "c184039d4aa574a141328f425d638c3f5f74039537915d23fab927487c35743b"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/convergence.png",
+    "bytes": 110080,
+    "sha256": "c4750e604af9604578224cb4c0d8f1bbb5b97d42ea61e334b92a2b88474c9d44"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/convergence.svg",
+    "bytes": 59043,
+    "sha256": "de4155e7e0b1116ed9e32e6377c2da24525bb19d34d008dbfeae41bebe0e2511"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_01.png",
+    "bytes": 401621,
+    "sha256": "70c0cab0671a04495a86661c53bc29aed4d0242d36fba09b7f04ab8bbee1a4e2"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_01.svg",
+    "bytes": 230413,
+    "sha256": "72e92740b84111bf2998c47b6aa3fca027319db13cfce8eca784bdf850e7ecd7"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_02.png",
+    "bytes": 477488,
+    "sha256": "28280741faeab2e249ee3522c4276278d7c7c02dce6be0baf2ce9915d8015cbd"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_02.svg",
+    "bytes": 325720,
+    "sha256": "b35f664827bc8b80516d7a84f3205a881559762b7b62bab0b9dc465c454d13e5"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_03.png",
+    "bytes": 555637,
+    "sha256": "69044b1d8fa647ebc3e26aad2ae976d025ed9dfdf0e71271d9a5bf8901f4a045"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_03.svg",
+    "bytes": 476833,
+    "sha256": "ac3f9a3b324297e51e40fa51ab4fa195786e2f2d6b666a1df1af175a04006e26"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_04.png",
+    "bytes": 741416,
+    "sha256": "894295ff13982ab0aaf099c4ef197e88e6ced94ea1cbd17ed7f867f9e4db4f38"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/mesh_mesh_04.svg",
+    "bytes": 830035,
+    "sha256": "92671f28dce57d0ac274223e68eef6ef9cc0f61a7dc0346cd548d3e51ac3b872"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/response.png",
+    "bytes": 363103,
+    "sha256": "53d864f42f445da75e86daf3fde1b7301ccdc1c271013e74e1d320002124ce21"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/response.svg",
+    "bytes": 3091126,
+    "sha256": "c8c90177b1ee1b60b4c6b64b24a265d44bfc998c1aecc3e3f559e977bb72065e"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/setup.png",
+    "bytes": 406612,
+    "sha256": "bd00b9f468f14b7d5c3db7a038ad24dc82d1ef011ff92891e51642d4e12d1665"
+  },
+  {
+    "path": "simulation/lid-pressure/results/plots/setup.svg",
+    "bytes": 401818,
+    "sha256": "67b40cd4f4e7987786f96b8d644fae3c91c2339844f4e1ddab7f2866cf5936d4"
+  },
+  {
+    "path": "simulation/lid-pressure/results/solver_verification.json",
+    "bytes": 223,
+    "sha256": "8b5e54343ad1bfc47e5fca42b16f1661c8265ac23e8de9249be1172d98d3f17b"
+  },
+  {
+    "path": "simulation/lid-pressure/results/summary.json",
+    "bytes": 8344,
+    "sha256": "248fe63db3837cb24afab6a890f394c2bcccbd65f2e0f5a0bb4a50a71670b0df"
+  },
+  {
+    "path": "simulation/lid-pressure/run_study.py",
+    "bytes": 23468,
+    "sha256": "a35ec79dfefd9a8b2cf734d4878b7b1f8cd61dbf946452a8b65ab227a1ef4346"
+  },
+  {
+    "path": "simulation/lid-pressure/study.json",
+    "bytes": 1694,
+    "sha256": "66a50dcd705069f9733fc91f7cfb2e6a0ecdba977b46b139ea334bac73ed22e6"
+  },
+  {
+    "path": "cad/VKA2026.step",
+    "bytes": 1406956,
+    "sha256": "8857d052af91eca43b5cf8fd16ea1c35b9f05d296f065b5a0be92e9c094a27be"
+  }
+]

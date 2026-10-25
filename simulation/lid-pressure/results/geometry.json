@@ -1,0 +1,61 @@
+{
+  "source_step_sha256": "8857d052af91eca43b5cf8fd16ea1c35b9f05d296f065b5a0be92e9c094a27be",
+  "source_body_name": "Shapes/MineSense_Presentation_Assembly/Lid (exploded)/Lid (exploded)",
+  "original_bounds_mm": [
+    -1e-07,
+    -1e-07,
+    36.9999999,
+    100.0000001,
+    70.0000001,
+    40.0000001
+  ],
+  "z_translation_mm": -37.0,
+  "analysis_bounds_mm": [
+    -0.0,
+    -0.0,
+    -0.0,
+    100.0,
+    70.0,
+    3.0
+  ],
+  "dimensions_mm": [
+    100.0,
+    70.0,
+    3.0
+  ],
+  "cad_volume_mm3": 20884.546469980578,
+  "screw_holes": [
+    {
+      "center_mm": [
+        7.0000000000001155,
+        7.0,
+        1.5
+      ],
+      "radius_mm": 1.75
+    },
+    {
+      "center_mm": [
+        93.00000000000011,
+        7.0,
+        1.5
+      ],
+      "radius_mm": 1.75
+    },
+    {
+      "center_mm": [
+        7.0000000000001155,
+        63.0,
+        1.5
+      ],
+      "radius_mm": 1.75
+    },
+    {
+      "center_mm": [
+        93.00000000000011,
+        63.0,
+        1.5
+      ],
+      "radius_mm": 1.75
+    }
+  ]
+}

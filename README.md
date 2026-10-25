@@ -13,6 +13,7 @@
   <a href="#system-architecture">Architecture</a> ·
   <a href="#kicad-schematic">KiCad schematic</a> ·
   <a href="#pcb-layout-draft">PCB layout</a> ·
+  <a href="#preliminary-enclosure-fea">FEA study</a> ·
   <a href="#cad-and-design-evidence">CAD gallery</a> ·
   <a href="cad/VKA2026.step">STEP model</a> ·
   <a href="docs/stage-2-submission.pdf">Stage 2 submission</a> ·
@@ -25,7 +26,7 @@ PRAN RAKSHAK is a mine safety project designed to detect underground hazards, wa
 
 Its scope covers methane, carbon monoxide, and hydrogen sulfide monitoring, with dust exposure and mine-runoff quality monitoring included in the wider environmental design. A panic button and motion-based man-down detection support worker distress alerts.
 
-> **Current stage:** CAD, schematic, and preliminary PCB design. The repository includes the STEP assembly, CAD screenshots, a four-sheet KiCad schematic, and a separate PCB carrier draft with BOMs, previews, and check reports. The schematic and PCB are different design variants and have not been synchronized. Firmware, calibration, and field-test results remain pending; performance figures are design targets.
+> **Current stage:** CAD, schematic, preliminary PCB design, and an assumption-based lid FEA study. Native files, numerical outputs, plots, and check reports are published. The schematic and PCB remain different design variants. Material and loading for the FEA are illustrative; firmware, calibration, and physical field validation remain pending.
 
 <p align="center">
   <img src="assets/cad/assembly-wiring.jpeg" alt="CAD view of the sensor enclosure with an exploded lid, ESP32 board, gas sensor, power module, and color-coded wiring" width="100%">
@@ -171,7 +172,7 @@ These targets come from the project specification on page 7 of the [Stage 2 subm
 | End-to-end gas alert | Less than 10 seconds between threshold crossing and helmet warning |
 | Battery endurance | 8 hours on a 3.7 V, 2500 mAh LiPo |
 | Average node power | Approximately 1 W, with sensor-heater duty cycling proposed |
-| Wearable pod envelope | Approximately 52 × 88 × 28 mm and 120 g; a target, not a measured property of the supplied STEP file |
+| Wearable pod envelope | Approximately 52 × 88 × 28 mm and 120 g target; STEP inspection gives a 100 × 70 × 25 mm enclosure and 100 × 70 × 3 mm lid, so packaging remains to be reconciled |
 | Ingress protection | IP67 target; no ingress-test evidence supplied |
 | Offline logging | At least 7 days at the local gateway |
 | Missing-node detection | Flag a node within 30 seconds of lost contact |
@@ -205,6 +206,23 @@ cd PranRakshak
 Import `cad/VKA2026.step` into a STEP-compatible CAD application such as Fusion, FreeCAD, or SolidWorks. Units are millimetres. With the lid in its exploded position, inspect the enclosure, component placement, standoffs, and wiring.
 
 The supplied file is a STEP assembly exchange model. The originating application's editable sketches and parametric feature history are separate deliverables and are not included here.
+
+## Preliminary enclosure FEA
+
+An [actual numerical lid-pressure study](simulation/lid-pressure/README.md) has been run using the lid extracted from the STEP assembly. Material and service loading are undecided, so the study uses an **assumed isotropic polymer (E=2000 MPa, ν=0.35), a uniform 10 N downward force, and idealized fixed screw-hole walls**. It is a preliminary setup, with no material-strength or safety pass claimed.
+
+[![Mesh-refinement plots from four actual finite-element solves](simulation/lid-pressure/results/plots/convergence.png)](simulation/lid-pressure/Report.html)
+
+| Study output | Published result |
+| --- | --- |
+| Geometry | Actual lid: 100 × 70 × 3 mm, four 3.5 mm holes. |
+| Solves | Four meshes: 2,449, 3,490, 4,822, and 7,411 tetrahedra. Final mesh: 14,188 quadratic displacement nodes and 42,564 DOFs. |
+| Conditional centre deflection | 0.06623 mm under the assumed material, supports, and 10 N load. |
+| Selected convergence check | Centre deflection and a fixed central stress-probe measure each changed by less than 2% for two successive refinements; final changes were 0.319% and 0.096%. |
+| Numerical checks | Analytical uniaxial-tension solver/probe check passed; force balance and free-DOF residual checked for each lid solve. |
+| Files | [Visual report](simulation/lid-pressure/Report.html), [detailed study](simulation/lid-pressure/README.md), [mesh statistics CSV](simulation/lid-pressure/results/mesh_statistics.csv), [editable assumptions](simulation/lid-pressure/study.json), and [complete study ZIP](simulation/PranRakshak_Preliminary_Lid_FEA.zip). |
+
+Tagged Gmsh meshes, VTU fields, full solution coefficients, mesher logs, and source code are included. Convergence applies to the two selected measures; it is not an absolute error bound or proof that clamp-region maximum stress has converged. This isolated-lid static study establishes no drop resistance, enclosure sealing, helmet compliance, or intrinsic-safety certification.
 
 ## Safety and reliability plan
 
@@ -256,6 +274,9 @@ PranRakshak/
 │   ├── PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip
 │   ├── kicad/                    # Four-sheet schematic project and verification records
 │   └── pcb/                      # Separate carrier board, source files, and native DRC review
+├── simulation/
+│   ├── PranRakshak_Preliminary_Lid_FEA.zip
+│   └── lid-pressure/             # Assumptions, solver, report, meshes, fields, and convergence plots
 └── docs/
     ├── banner-design.md
     ├── design-notes.md
@@ -282,6 +303,8 @@ The team's [Stage 2 submission PDF](docs/stage-2-submission.pdf) supplies the pr
 The [Revision A electrical design notes](hardware/kicad/Design_Notes.md) document the KiCad schematic's engineering choices, calculations, and component datasheet references. These proposed choices are distinguished from the submission's requirements.
 
 The separate PCB package was supplied through [Explain KiCad EDA Layout](https://chatgpt.com/share/6ade29ec-7dcc-83ee-a8ff-30b51f544990). Its [source README](hardware/pcb/PRAN_RAKSHAK_RevA_README.md) records the carrier-board assumptions; the [repository review](hardware/pcb/review/README.md) adds the native KiCad DRC result.
+
+The [preliminary FEA report](simulation/lid-pressure/README.md) records the mechanical study assumptions, source-geometry hash, solver versions, numerical checks, and method references.
 
 The banner is an AI-generated concept illustration derived from the PDF's mining-safety concept and architecture. Its [design notes and generation prompt](docs/banner-design.md) record the source pages.
 
