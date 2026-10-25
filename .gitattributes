@@ -2,3 +2,7 @@
 *.step -text
 # Preserve the imported KiCad package, exports, and verification records.
 hardware/kicad/** -text whitespace=cr-at-eol
+# Preserve the separately supplied PCB draft and its source records.
+hardware/pcb/** -text whitespace=cr-at-eol
+# Keep native KiCad SVG plotting whitespace as exported.
+hardware/pcb/review/*.svg -whitespace

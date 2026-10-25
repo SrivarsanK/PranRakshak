@@ -12,6 +12,7 @@
   <a href="#the-problem">The problem</a> ·
   <a href="#system-architecture">Architecture</a> ·
   <a href="#kicad-schematic">KiCad schematic</a> ·
+  <a href="#pcb-layout-draft">PCB layout</a> ·
   <a href="#cad-and-design-evidence">CAD gallery</a> ·
   <a href="cad/VKA2026.step">STEP model</a> ·
   <a href="docs/stage-2-submission.pdf">Stage 2 submission</a> ·
@@ -24,7 +25,7 @@ PRAN RAKSHAK is a mine safety project designed to detect underground hazards, wa
 
 Its scope covers methane, carbon monoxide, and hydrogen sulfide monitoring, with dust exposure and mine-runoff quality monitoring included in the wider environmental design. A panic button and motion-based man-down detection support worker distress alerts.
 
-> **Current stage:** CAD and electrical schematic design, Revision A. The repository includes the STEP assembly, original CAD screenshots, an editable four-sheet KiCad project, BOM, schematic PDF, ERC report, and Stage 2 submission. Firmware, gateway software, calibration records, and field-test results remain pending. Performance figures below are design targets, with current schematic limitations stated separately.
+> **Current stage:** CAD, schematic, and preliminary PCB design. The repository includes the STEP assembly, CAD screenshots, a four-sheet KiCad schematic, and a separate PCB carrier draft with BOMs, previews, and check reports. The schematic and PCB are different design variants and have not been synchronized. Firmware, calibration, and field-test results remain pending; performance figures are design targets.
 
 <p align="center">
   <img src="assets/cad/assembly-wiring.jpeg" alt="CAD view of the sensor enclosure with an exploded lid, ESP32 board, gas sensor, power module, and color-coded wiring" width="100%">
@@ -94,7 +95,9 @@ Wi-Fi/MQTT is the baseline communication design. Multi-hop routing, Kinetic Mesh
 
 ## Hardware and software design
 
-| Subsystem | Requirement and current design |
+The table describes the four-sheet schematic design. The separate [PCB carrier draft](#pcb-layout-draft) uses a different ADC, GPIO map, and external power arrangement.
+
+| Subsystem | Requirement and four-sheet schematic design |
 | --- | --- |
 | Node controller | ESP32-C3 for sensor acquisition and wireless telemetry; Revision A uses ESP32-C3-WROOM-02-N4 with boot/reset, native USB, and battery ADC circuitry. |
 | Methane sensing | MQ-4 sensor, subject to calibration and heater-power validation. |
@@ -130,11 +133,33 @@ Download the [complete KiCad ZIP](hardware/PRAN_RAKSHAK_KiCad.zip), or use the c
 | Design evidence | Result or file |
 | --- | --- |
 | Native KiCad ERC | **0 electrical errors, 68 footprint-review warnings, no exclusions or ignored checks**, reproduced with KiCad 10.0.7 after importing the package into this repository. |
-| Remaining warnings | Unassigned footprints; footprint selection and PCB layout are still required. This is not a warning-free ERC result. |
+| Remaining schematic warnings | Unassigned footprints; footprint selection is still required for this schematic. Its ERC result does not validate the separate PCB draft. |
 | Verification record | [Original ERC JSON](hardware/kicad/ERC_Report.json) and [verification notes](hardware/kicad/Verification.md), which record 125 connection/structure checks. |
 | Bill of materials | [Full BOM](hardware/kicad/BOM.csv) and [short BOM with proposed selections](hardware/kicad/Short_BOM.md); prices have not been quoted. |
 
-Revision A is a bench schematic. Its design calculations estimate approximately **2.4–3.1 hours** of runtime under the stated load assumptions, below the eight-hour target. The proposed MQ-7B's **150-second heater cycle** also prevents a guaranteed fresh CO measurement within ten seconds across all phases. The H2S cell/AFE remains an open design item. See the [electrical design notes](hardware/kicad/Design_Notes.md) before building; no PCB layout or certified mining hardware is included.
+The four-sheet Revision A design is a bench schematic. Its calculations estimate approximately **2.4–3.1 hours** of runtime under the stated load assumptions, below the eight-hour target. The proposed MQ-7B's **150-second heater cycle** also prevents a guaranteed fresh CO measurement within ten seconds across all phases. The H2S cell/AFE remains an open design item. See the [electrical design notes](hardware/kicad/Design_Notes.md) before building. The separate layout below has not been matched to this schematic.
+
+## PCB layout draft
+
+The [standalone PCB package](hardware/pcb/README.md) contains an editable **52 × 88 mm, two-layer carrier board** with 49 footprint instances and 27 named electrical nets. It places an ESP32-C3 module, ADS1115 external ADC, sensor headers, and alarm-driver circuitry, with preliminary copper routing and antenna keepouts.
+
+<p align="center">
+  <a href="hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb"><img src="assets/pcb/pcb-overview.png" alt="Supplied placement and preliminary copper preview of the partially routed PRAN RAKSHAK PCB carrier draft" width="400"></a>
+  <br><sub>Supplied programmatic placement/copper preview. This is a layout draft, not a DRC screenshot or fabricated board.</sub>
+</p>
+
+| PCB deliverable | Link or status |
+| --- | --- |
+| Editable board | [PRAN_RAKSHAK_RevA.kicad_pcb](hardware/pcb/PRAN_RAKSHAK_RevA.kicad_pcb) — open directly in KiCad PCB Editor. |
+| Complete source package | [Download the original PCB ZIP](hardware/PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip). All seven supplied files are preserved. |
+| Components and connections | [PCB BOM](hardware/pcb/PRAN_RAKSHAK_RevA_BOM.csv) and [pad-to-net mapping](hardware/pcb/PRAN_RAKSHAK_RevA_Net_Mapping.csv). |
+| Original design records | [Supplied README](hardware/pcb/PRAN_RAKSHAK_RevA_README.md), [routing summary](hardware/pcb/PRAN_RAKSHAK_routing_status.txt), and [generator source](hardware/pcb/build_pran_pcb.py). |
+| Native KiCad review | [DRC JSON](hardware/pcb/review/DRC_Report.json), [review conditions](hardware/pcb/review/README.md), and [KiCad layer export](hardware/pcb/review/PCB_Layers.svg). |
+| DRC result | **61 rule violations: 5 errors and 56 warnings, plus 33 unconnected items.** Checked with KiCad 10.0.7 after filling zones in memory; the supplied board file was not changed. |
+
+This carrier is **not fabrication-ready**. It requires externally regulated 3.3 V and 5 V supplies and includes no battery charger or battery-protection circuit. Its ADS1115 interface, analog dust placeholder, GPIO assignments, and connector map differ from the four-sheet schematic. It has no matching native schematic in the supplied package; schematic/PCB parity has not been checked. Five default DRC checks remain ignored in this standalone-board review.
+
+Complete the routing, resolve DRC findings, verify footprints and power interfaces, and reconcile the board with a matching schematic before fabrication. The original routing summary is an algorithmic source record; the new native KiCad report records the integration review. Neither design is certified for explosive mine environments.
 
 ## Engineering targets
 
@@ -198,11 +223,11 @@ Intrinsic safety, flame protection, enclosure sealing, and impact resistance req
 
 ## Roadmap
 
-The schedule below follows the submission's October 2026–January 2027 fabrication plan. The Revision A schematic, BOM, and ERC evidence are now published; footprint selection, procurement, and calibration remain open.
+The schedule below follows the submission's October 2026–January 2027 fabrication plan. Schematic and standalone PCB drafts are now published, along with ERC and DRC evidence. Matching the two designs, completing routing, resolving checks, procurement, and calibration remain open.
 
 | Period | Planned work | Evidence to publish |
 | --- | --- | --- |
-| October 2026 | Review Revision A, resolve footprints and open interfaces, procure components, and bench-calibrate gas sensors. | KiCad project, BOM, and ERC report published; final component selection, quotes, and calibration records pending. |
+| October 2026 | Reconcile the schematic and PCB variants, complete routing, resolve footprints and open interfaces, procure components, and bench-calibrate sensors. | Native schematic and PCB drafts, BOMs, ERC, and failing DRC report published; final design, quotes, and calibration records pending. |
 | November 2026 | Assemble four sensor nodes and the helmet unit; bring up the Pi gateway, broker, display, and alarms. | Assembly photos, firmware, gateway configuration, and timestamped telemetry. |
 | December 2026 | Test connectivity, node loss, man-down detection, watchdogs, brownouts, and corridor localization. | Integration logs and measured alert/localization behavior. |
 | January 2027 | Run endurance and drift tests, tune the system, and prepare the Stage 3 demonstration. | Battery measurements, soak-test records, and demonstration evidence. |
@@ -218,15 +243,19 @@ PranRakshak/
 │   │   ├── assembly-wiring.jpeg
 │   │   ├── assembly-overview.jpeg
 │   │   └── enclosure-components.jpeg
-│   └── schematic/
-│       └── esp32-c3-overview.png
+│   ├── schematic/
+│   │   └── esp32-c3-overview.png
+│   └── pcb/
+│       └── pcb-overview.png
 ├── cad/
 │   ├── README.md
 │   └── VKA2026.step
 ├── hardware/
 │   ├── README.md
 │   ├── PRAN_RAKSHAK_KiCad.zip
-│   └── kicad/                    # Native project, sheets, symbols, BOM, PDF, and reports
+│   ├── PRAN_RAKSHAK_KiCad_RevA_Design_Package.zip
+│   ├── kicad/                    # Four-sheet schematic project and verification records
+│   └── pcb/                      # Separate carrier board, source files, and native DRC review
 └── docs/
     ├── banner-design.md
     ├── design-notes.md
@@ -251,6 +280,8 @@ For the evidence inventory, source-page mapping, and unresolved specification de
 The team's [Stage 2 submission PDF](docs/stage-2-submission.pdf) supplies the project scope and specifications; the CAD screenshots and STEP model document the supplied design. Template examples are excluded as evidence of completed work.
 
 The [Revision A electrical design notes](hardware/kicad/Design_Notes.md) document the KiCad schematic's engineering choices, calculations, and component datasheet references. These proposed choices are distinguished from the submission's requirements.
+
+The separate PCB package was supplied through [Explain KiCad EDA Layout](https://chatgpt.com/share/6ade29ec-7dcc-83ee-a8ff-30b51f544990). Its [source README](hardware/pcb/PRAN_RAKSHAK_RevA_README.md) records the carrier-board assumptions; the [repository review](hardware/pcb/review/README.md) adds the native KiCad DRC result.
 
 The banner is an AI-generated concept illustration derived from the PDF's mining-safety concept and architecture. Its [design notes and generation prompt](docs/banner-design.md) record the source pages.
 

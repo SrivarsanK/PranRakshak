@@ -1,0 +1,1785 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T21:43:50",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "PRAN_RAKSHAK_RevA.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [3V3] on F.Cu, length 13.0000 mm",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 109.0
+                    },
+                    "uuid": "e3bc7c14-f78b-4f02-a4c0-105b7c37af72"
+                },
+                {
+                    "description": "Pad 8 [3V3] of U2 on F.Cu",
+                    "pos": {
+                        "x": 128.55,
+                        "y": 126.0
+                    },
+                    "uuid": "9714e2ef-10d4-4b65-8d63-e0651603d939"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [3V3] of D2 on F.Cu",
+                    "pos": {
+                        "x": 134.45,
+                        "y": 155.0
+                    },
+                    "uuid": "f5e39cbf-d190-484b-8d5a-29479a2b5d4a"
+                },
+                {
+                    "description": "Pad 1 [3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 137.45,
+                        "y": 153.0
+                    },
+                    "uuid": "32e031f6-a78f-479f-9675-1373ca6a4767"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [3V3] of D2 on F.Cu",
+                    "pos": {
+                        "x": 134.45,
+                        "y": 155.0
+                    },
+                    "uuid": "f5e39cbf-d190-484b-8d5a-29479a2b5d4a"
+                },
+                {
+                    "description": "PTH pad 1 [3V3] of J4",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 152.0
+                    },
+                    "uuid": "7a596971-fdd3-4d79-a8c9-58ed0a9fa271"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [3V3] of J10",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 159.0
+                    },
+                    "uuid": "98130bc9-aa94-4713-97e5-2c08ffea1b6a"
+                },
+                {
+                    "description": "Pad 1 [3V3] of D2 on F.Cu",
+                    "pos": {
+                        "x": 134.45,
+                        "y": 155.0
+                    },
+                    "uuid": "f5e39cbf-d190-484b-8d5a-29479a2b5d4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [3V3] of J9",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 148.0
+                    },
+                    "uuid": "5275a082-439c-4690-a7b7-ba06248a197f"
+                },
+                {
+                    "description": "Pad 1 [3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 137.45,
+                        "y": 153.0
+                    },
+                    "uuid": "32e031f6-a78f-479f-9675-1373ca6a4767"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [3V3] of J9",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 148.0
+                    },
+                    "uuid": "5275a082-439c-4690-a7b7-ba06248a197f"
+                },
+                {
+                    "description": "Track [3V3] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 123.75
+                    },
+                    "uuid": "bdcaa0eb-56be-46e0-adce-f09280b7b211"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [EN] of J12",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.0
+                    },
+                    "uuid": "44463b3e-1a44-4f79-adc3-31d842dc843d"
+                },
+                {
+                    "description": "Pad 1 [EN] of C4 on F.Cu",
+                    "pos": {
+                        "x": 114.03,
+                        "y": 110.0
+                    },
+                    "uuid": "a955ca0a-cf9f-471d-9893-da8725cde189"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [EN] of C4 on F.Cu",
+                    "pos": {
+                        "x": 114.03,
+                        "y": 110.0
+                    },
+                    "uuid": "a955ca0a-cf9f-471d-9893-da8725cde189"
+                },
+                {
+                    "description": "Pad 2 [EN] of R1 on F.Cu",
+                    "pos": {
+                        "x": 115.97,
+                        "y": 107.0
+                    },
+                    "uuid": "6e5f8d77-a155-4925-85c6-d1211739c599"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [EN] of R1 on F.Cu",
+                    "pos": {
+                        "x": 115.97,
+                        "y": 107.0
+                    },
+                    "uuid": "6e5f8d77-a155-4925-85c6-d1211739c599"
+                },
+                {
+                    "description": "Pad 2 [EN] of U1 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 89.6
+                    },
+                    "uuid": "8200a3bc-2d62-44a0-a46d-fce88312acf9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [SDA] of U1 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 94.1
+                    },
+                    "uuid": "a00b13c6-17ca-4852-ab33-7fde7a325e82"
+                },
+                {
+                    "description": "Pad 2 [SDA] of R3 on F.Cu",
+                    "pos": {
+                        "x": 127.97,
+                        "y": 109.0
+                    },
+                    "uuid": "c21f9394-3d9f-411f-8026-f2599eb183ce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [SDA] of R3 on F.Cu",
+                    "pos": {
+                        "x": 127.97,
+                        "y": 109.0
+                    },
+                    "uuid": "c21f9394-3d9f-411f-8026-f2599eb183ce"
+                },
+                {
+                    "description": "Pad 9 [SDA] of U2 on F.Cu",
+                    "pos": {
+                        "x": 128.55,
+                        "y": 125.5
+                    },
+                    "uuid": "aa28caaa-7a8f-4896-ac29-84f775df54bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [SDA] of U2 on F.Cu",
+                    "pos": {
+                        "x": 128.55,
+                        "y": 125.5
+                    },
+                    "uuid": "aa28caaa-7a8f-4896-ac29-84f775df54bb"
+                },
+                {
+                    "description": "PTH pad 3 [SDA] of J7",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 130.08
+                    },
+                    "uuid": "900e3dd3-327b-4914-bfab-d0dbeb415581"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 3 [SDA] of J7",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 130.08
+                    },
+                    "uuid": "900e3dd3-327b-4914-bfab-d0dbeb415581"
+                },
+                {
+                    "description": "PTH pad 3 [SDA] of J6",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 117.08
+                    },
+                    "uuid": "f421e553-ab4d-4f26-a3cc-318e3d9d299d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [SCL] of R4 on F.Cu",
+                    "pos": {
+                        "x": 133.97,
+                        "y": 109.0
+                    },
+                    "uuid": "9bc215be-61c6-46a2-b980-d6d94040a0ae"
+                },
+                {
+                    "description": "Pad 10 [SCL] of U2 on F.Cu",
+                    "pos": {
+                        "x": 128.55,
+                        "y": 125.0
+                    },
+                    "uuid": "bd728b7c-32dc-433b-8f82-bfa07b1dfce6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [SCL] of R4 on F.Cu",
+                    "pos": {
+                        "x": 133.97,
+                        "y": 109.0
+                    },
+                    "uuid": "9bc215be-61c6-46a2-b980-d6d94040a0ae"
+                },
+                {
+                    "description": "Pad 6 [SCL] of U1 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 95.6
+                    },
+                    "uuid": "46c4e8cd-6a82-4916-b92a-43678fe3050a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 4 [SCL] of J6",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.62
+                    },
+                    "uuid": "098f891e-b8ca-42e7-86ea-484b16257976"
+                },
+                {
+                    "description": "Pad 2 [SCL] of R4 on F.Cu",
+                    "pos": {
+                        "x": 133.97,
+                        "y": 109.0
+                    },
+                    "uuid": "9bc215be-61c6-46a2-b980-d6d94040a0ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 4 [SCL] of J7",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 132.62
+                    },
+                    "uuid": "e9c5307a-20fb-40b7-8fd2-469396fd541b"
+                },
+                {
+                    "description": "PTH pad 4 [SCL] of J6",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.62
+                    },
+                    "uuid": "098f891e-b8ca-42e7-86ea-484b16257976"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 1 [GND] of D3 on F.Cu",
+                    "pos": {
+                        "x": 121.03,
+                        "y": 104.0
+                    },
+                    "uuid": "699df6f8-4b48-40c7-920c-ca16ce22f40a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of D3 on F.Cu",
+                    "pos": {
+                        "x": 121.03,
+                        "y": 104.0
+                    },
+                    "uuid": "699df6f8-4b48-40c7-920c-ca16ce22f40a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of U2 on F.Cu",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 126.0
+                    },
+                    "uuid": "b19ed078-5b98-486a-a58b-edd0ce874105"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R11 on F.Cu",
+                    "pos": {
+                        "x": 125.97,
+                        "y": 140.0
+                    },
+                    "uuid": "1fbe9013-5296-4aff-a2fd-15c4d5d6524b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [PANIC] of R5 on F.Cu",
+                    "pos": {
+                        "x": 119.97,
+                        "y": 117.0
+                    },
+                    "uuid": "62464c1a-00a1-4c36-aabc-7e49c0a1d02c"
+                },
+                {
+                    "description": "PTH pad 1 [PANIC] of J8",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 138.0
+                    },
+                    "uuid": "02dc67ca-8824-4234-b862-8916f16dccb9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 10 [PANIC] of U1 on F.Cu",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 100.1
+                    },
+                    "uuid": "ebd28fbd-0b0a-4579-a56f-e42353a2e8c6"
+                },
+                {
+                    "description": "Pad 2 [PANIC] of R5 on F.Cu",
+                    "pos": {
+                        "x": 119.97,
+                        "y": 117.0
+                    },
+                    "uuid": "62464c1a-00a1-4c36-aabc-7e49c0a1d02c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [MOTOR_GATE_SRC] of R14 on F.Cu",
+                    "pos": {
+                        "x": 118.03,
+                        "y": 151.0
+                    },
+                    "uuid": "0d6bed5f-5e99-4501-9224-9b9d1f29d966"
+                },
+                {
+                    "description": "Pad 11 [MOTOR_GATE_SRC] of U1 on F.Cu",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 98.6
+                    },
+                    "uuid": "4dca22a9-89b0-440e-b174-938badb8da65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 4 [VBAT_RAW] of J1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 123.62
+                    },
+                    "uuid": "fef7d8ab-4a10-4b6d-999a-a3409f6cca7d"
+                },
+                {
+                    "description": "Pad 1 [VBAT_RAW] of R6 on F.Cu",
+                    "pos": {
+                        "x": 118.03,
+                        "y": 121.0
+                    },
+                    "uuid": "764affb4-1bbf-4687-b613-c6614072e6eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [CH4_AIN] of R8 on F.Cu",
+                    "pos": {
+                        "x": 117.97,
+                        "y": 134.0
+                    },
+                    "uuid": "09e3e5d3-3198-4863-9c02-edea26d2a66e"
+                },
+                {
+                    "description": "Pad 1 [CH4_AIN] of R9 on F.Cu",
+                    "pos": {
+                        "x": 124.03,
+                        "y": 134.0
+                    },
+                    "uuid": "cb9a1770-307e-4fa2-96da-ef958139cc99"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [CH4_AIN] of R9 on F.Cu",
+                    "pos": {
+                        "x": 124.03,
+                        "y": 134.0
+                    },
+                    "uuid": "cb9a1770-307e-4fa2-96da-ef958139cc99"
+                },
+                {
+                    "description": "Pad 4 [CH4_AIN] of U2 on F.Cu",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 126.5
+                    },
+                    "uuid": "98c634ca-0f4a-4d42-9536-f418c7abac26"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [CH4_AIN] of C5 on F.Cu",
+                    "pos": {
+                        "x": 131.03,
+                        "y": 135.0
+                    },
+                    "uuid": "3a627e1d-f417-47c5-a7b9-47dc1329be3a"
+                },
+                {
+                    "description": "Pad 1 [CH4_AIN] of R9 on F.Cu",
+                    "pos": {
+                        "x": 124.03,
+                        "y": 134.0
+                    },
+                    "uuid": "cb9a1770-307e-4fa2-96da-ef958139cc99"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [DUST_AIN] of R12 on F.Cu",
+                    "pos": {
+                        "x": 117.97,
+                        "y": 147.0
+                    },
+                    "uuid": "3ba3ecad-b2d8-420c-ad55-ba077839b124"
+                },
+                {
+                    "description": "Pad 1 [DUST_AIN] of R13 on F.Cu",
+                    "pos": {
+                        "x": 124.03,
+                        "y": 147.0
+                    },
+                    "uuid": "e49372ef-78e5-49d9-9783-00f264df17ce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [DUST_AIN] of R13 on F.Cu",
+                    "pos": {
+                        "x": 124.03,
+                        "y": 147.0
+                    },
+                    "uuid": "e49372ef-78e5-49d9-9783-00f264df17ce"
+                },
+                {
+                    "description": "Pad 1 [DUST_AIN] of C7 on F.Cu",
+                    "pos": {
+                        "x": 131.03,
+                        "y": 145.0
+                    },
+                    "uuid": "9f23b9ce-5e1f-45cc-810b-74fa1d386e6f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [DUST_AIN] of C7 on F.Cu",
+                    "pos": {
+                        "x": 131.03,
+                        "y": 145.0
+                    },
+                    "uuid": "9f23b9ce-5e1f-45cc-810b-74fa1d386e6f"
+                },
+                {
+                    "description": "Pad 7 [DUST_AIN] of U2 on F.Cu",
+                    "pos": {
+                        "x": 128.55,
+                        "y": 126.5
+                    },
+                    "uuid": "4e92a4ee-ed21-4c10-bf62-c3ef8b59fcf9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [MOTOR_GATE] of R14 on F.Cu",
+                    "pos": {
+                        "x": 119.97,
+                        "y": 151.0
+                    },
+                    "uuid": "4d8a11d3-fafe-4854-8992-9011752d90e2"
+                },
+                {
+                    "description": "Pad 1 [MOTOR_GATE] of R15 on F.Cu",
+                    "pos": {
+                        "x": 125.03,
+                        "y": 151.0
+                    },
+                    "uuid": "9b4ff56b-c827-4423-b92a-c1c4ec09c0f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [MOTOR_GATE] of R15 on F.Cu",
+                    "pos": {
+                        "x": 125.03,
+                        "y": 151.0
+                    },
+                    "uuid": "9b4ff56b-c827-4423-b92a-c1c4ec09c0f5"
+                },
+                {
+                    "description": "Pad 1 [MOTOR_GATE] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 134.05,
+                        "y": 148.05
+                    },
+                    "uuid": "94aea5d8-c8b4-4134-aaf8-c79c4feab16a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 9 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 100.1
+                    },
+                    "uuid": "9d3dca4b-5bc0-4a64-885c-b9a8203d55f8"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 3 [GND] of U2 on F.Cu",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 126.0
+                    },
+                    "uuid": "b19ed078-5b98-486a-a58b-edd0ce874105"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C3 on F.Cu",
+                    "pos": {
+                        "x": 132.97,
+                        "y": 122.0
+                    },
+                    "uuid": "24cf98cf-0a80-4008-b9ef-549e17bfe232"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C4 on F.Cu",
+                    "pos": {
+                        "x": 115.97,
+                        "y": 110.0
+                    },
+                    "uuid": "a1d6c09c-43b9-4c3c-b59a-9f5e6953f5d2"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.6,
+                        "y": 80.6
+                    },
+                    "uuid": "30951f7c-b1a9-43ab-b4d2-bc8b9a3fabc8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C5 on F.Cu",
+                    "pos": {
+                        "x": 132.97,
+                        "y": 135.0
+                    },
+                    "uuid": "a4f2625e-e967-45cc-a4f3-cbc71a09cc1c"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 94.0
+                    },
+                    "uuid": "58eccde2-e2cc-4164-975f-de5391262368"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 116.0
+                    },
+                    "uuid": "b8460576-9fcf-4331-95ef-b0f0e2b51f6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 132.0
+                    },
+                    "uuid": "21e9079e-83ba-4c7f-a2b2-426ccd73abf9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 142.0
+                    },
+                    "uuid": "e235ac84-6051-491d-a7c3-7b4f095dcf0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 152.0
+                    },
+                    "uuid": "9b866dbe-31a0-4054-b2ab-227cc33a6415"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 159.0
+                    },
+                    "uuid": "e9e84f8e-d48f-4c56-a297-f829427a110f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J6",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 112.0
+                    },
+                    "uuid": "8a971a9c-6fde-4b8c-8d78-a9bbdc3f2505"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 125.0
+                    },
+                    "uuid": "efe212f5-4af3-4a88-8bbb-10ab22dbe7b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J8",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 138.0
+                    },
+                    "uuid": "ef9a02df-95f9-42d6-9f5f-e56109bef396"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 148.0
+                    },
+                    "uuid": "66714ae3-3d76-42d2-8851-dc2471e8cadd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J10",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 159.0
+                    },
+                    "uuid": "3a938f2e-6147-43c2-9ec6-3890e1de688f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J11",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 96.0
+                    },
+                    "uuid": "ac5d0f72-5210-4741-85f0-2106d892d5eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J12",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.0
+                    },
+                    "uuid": "242565a9-4329-4e38-8992-86e664024356"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint J13",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 111.0
+                    },
+                    "uuid": "b8b81ea3-11a1-40a9-8eaf-35f4f5f8c40d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 126.0
+                    },
+                    "uuid": "cfaa4629-eb84-4478-8df9-5fb5d502d310"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 90.0
+                    },
+                    "uuid": "bedff5a4-36f8-41a0-94cf-3dd28b77b610"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 103.0
+                    },
+                    "uuid": "04ae46c3-eb79-403e-ad51-cab8773bc094"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 122.0
+                    },
+                    "uuid": "fe7a710b-6acf-403e-bf45-6c5ad212b9dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 107.0
+                    },
+                    "uuid": "ead653cc-900a-4411-831a-547fc579c83f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 110.0
+                    },
+                    "uuid": "5ede4a39-122f-4616-a875-b883fa2acf8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 109.0
+                    },
+                    "uuid": "2d1fd726-c75a-469c-a248-a5a00561cc39"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 109.0
+                    },
+                    "uuid": "8a9629c5-d681-44ac-8461-5400c9ac7907"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 109.0
+                    },
+                    "uuid": "40358fe4-b4ce-46d1-bf2e-aa21236afd81"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 117.0
+                    },
+                    "uuid": "25503ae1-630e-4939-9497-ac4a35d22546"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 121.0
+                    },
+                    "uuid": "e10e7d3f-8c03-4884-9d87-588895b2a76f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 124.0
+                    },
+                    "uuid": "d2cd5d1a-825e-46cf-8c02-d22e3686c7b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 134.0
+                    },
+                    "uuid": "6f127e6f-6631-4b7e-b1f9-118c7203833c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 134.0
+                    },
+                    "uuid": "2cb8db55-f7a9-44fb-bf16-04f249a9cc80"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 140.0
+                    },
+                    "uuid": "9092d5e0-352a-4ef3-8c88-48ddd4aa3095"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 140.0
+                    },
+                    "uuid": "4d26ee42-c6f0-4845-bbb3-f4123449e50e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 147.0
+                    },
+                    "uuid": "2e9291bd-63ae-4db9-b07f-c6d3b82895f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 147.0
+                    },
+                    "uuid": "dc4085a8-0897-4323-ae3a-1a83c5eaaf9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 135.0
+                    },
+                    "uuid": "4e7701dc-05c3-4539-b8a0-eca68b19554a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 140.0
+                    },
+                    "uuid": "6ecf8bd0-a965-43e6-9f4b-4088e0fe9ad4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 145.0
+                    },
+                    "uuid": "b15ccb92-9b84-4093-b00a-645e8c134e48"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 151.0
+                    },
+                    "uuid": "cd43ab94-ffe5-4463-94cb-5a55f7acdaa1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 151.0
+                    },
+                    "uuid": "ca1b3bc7-7d21-466f-80ce-be557bfbf67b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 149.0
+                    },
+                    "uuid": "819f2846-a388-4c77-95f0-6c4208114062"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 153.0
+                    },
+                    "uuid": "4855d955-24f6-42ef-a648-61ccb1757b01"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 155.0
+                    },
+                    "uuid": "48c72e02-b066-4ccc-8fbe-5b8a3c29e718"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 155.0
+                    },
+                    "uuid": "b8222599-a8e4-4909-9e7b-e676b89c7e9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 159.0
+                    },
+                    "uuid": "684d03df-a2ce-4cc1-bbec-82044319e590"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 155.0
+                    },
+                    "uuid": "5b9521d8-9006-4dc3-8195-43c4a960de66"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 104.0
+                    },
+                    "uuid": "57f8c385-e447-42b4-a117-c22248f8001c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 104.0
+                    },
+                    "uuid": "76f666ab-059e-4fdd-8aca-71be9d232c54"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 85.0
+                    },
+                    "uuid": "f5162eb4-62b0-45aa-b3ef-ae4f90a2b169"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 85.0
+                    },
+                    "uuid": "264e1f11-1a89-4643-9ae8-e9ead2f71770"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 165.0
+                    },
+                    "uuid": "8faad705-29ad-4322-b626-34d46c644971"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'PRAN_RAKSHAK'",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 165.0
+                    },
+                    "uuid": "22c7ac24-3d8a-48a4-984a-2a79d7e5759d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)",
+            "items": [
+                {
+                    "description": "PCB text '3V3 & 5V MUST BE REGULATED EXTERNALLY' on B.Silkscreen",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 166.5
+                    },
+                    "uuid": "927f34e6-f9d7-4060-89d3-c76807013e7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)",
+            "items": [
+                {
+                    "description": "Footprint text of U1 (KEEP ANTENNA CLEAR)",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 84.0
+                    },
+                    "uuid": "9b3749ca-abd3-446e-96e4-87a072c06569"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'PRAN RAKSHAK  |  PROTOTYPE REV-A' on F.Silkscreen",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 106.0
+                    },
+                    "uuid": "599e1ee8-0350-4345-871b-5d6f5a64dc44"
+                },
+                {
+                    "description": "Reference field of R1",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 105.15
+                    },
+                    "uuid": "8126a956-6580-4036-8454-1706be53105e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'PRAN RAKSHAK  |  PROTOTYPE REV-A' on F.Silkscreen",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 106.0
+                    },
+                    "uuid": "599e1ee8-0350-4345-871b-5d6f5a64dc44"
+                },
+                {
+                    "description": "Reference field of J12",
+                    "pos": {
+                        "x": 110.7,
+                        "y": 106.2
+                    },
+                    "uuid": "a54f94a4-a51f-4003-9775-dc1a74cc64c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'PRAN RAKSHAK  |  PROTOTYPE REV-A' on F.Silkscreen",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 106.0
+                    },
+                    "uuid": "599e1ee8-0350-4345-871b-5d6f5a64dc44"
+                },
+                {
+                    "description": "Pad 1 [3V3] of R1 on F.Cu",
+                    "pos": {
+                        "x": 114.03,
+                        "y": 107.0
+                    },
+                    "uuid": "8e1093f8-bf6b-45e5-8aea-7379f86c3bf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'PRAN RAKSHAK  |  PROTOTYPE REV-A' on F.Silkscreen",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 106.0
+                    },
+                    "uuid": "599e1ee8-0350-4345-871b-5d6f5a64dc44"
+                },
+                {
+                    "description": "Pad 2 [EN] of R1 on F.Cu",
+                    "pos": {
+                        "x": 115.97,
+                        "y": 107.0
+                    },
+                    "uuid": "6e5f8d77-a155-4925-85c6-d1211739c599"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Non-Mirrored text on back layer",
+            "items": [
+                {
+                    "description": "PCB text '3V3 & 5V MUST BE REGULATED EXTERNALLY' on B.Silkscreen",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 166.5
+                    },
+                    "uuid": "927f34e6-f9d7-4060-89d3-c76807013e7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "nonmirrored_text_on_back_layer"
+        }
+    ]
+}

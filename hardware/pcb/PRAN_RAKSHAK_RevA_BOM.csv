@@ -1,0 +1,50 @@
+Reference,Value,Footprint/Type,Notes
+U1,ESP32-C3-WROOM-02-N4,ESP32-C3-WROOM-02,On-board Wi-Fi antenna - keep metal & copper away
+J1,Power_In_04,PWR,Header connector: verify mating pinout
+J2,MQ4_03,MQ4,Header connector: verify mating pinout
+J3,MQ7_03,MQ7,Header connector: verify mating pinout
+J4,H2S_AFE_03,H2S,Header connector: verify mating pinout
+J5,DUST_AFE_03,DUST,Header connector: verify mating pinout
+J6,I2C_OLED_04,OLED,Header connector: verify mating pinout
+J7,I2C_IMU_04,IMU,Header connector: verify mating pinout
+J8,Panic_02,PANIC_SW,Header connector: verify mating pinout
+J9,Vibration_02,VIB,Header connector: verify mating pinout
+J10,Buzzer_02,BUZZ,Header connector: verify mating pinout
+J11,USB_Test_03,USB_TEST,Header connector: verify mating pinout
+J12,Reset_02,RESET,Header connector: verify mating pinout
+J13,Boot_02,BOOT,Header connector: verify mating pinout
+U2,ADS1115IDGST,VSSOP-10,16-bit I2C ADC; address tied to GND
+C1,10uF,C_0805,
+C2,100nF,C_0805,
+C3,100nF,C_0805,
+R1,10k,R_0805,
+C4,1uF,C_0805,
+R2,10k,R_0805,
+R3,4.7k,R_0805,
+R4,4.7k,R_0805,
+R5,10k,R_0805,
+R6,100k,R_0805,
+R7,100k,R_0805,
+R8,12k,R_0805,
+R9,20k,R_0805,
+R10,12k,R_0805,
+R11,20k,R_0805,
+R12,12k,R_0805,
+R13,20k,R_0805,
+C5,10nF,C_0805,
+C6,10nF,C_0805,
+C7,10nF,C_0805,
+R14,100R,R_0805,
+R15,100k,R_0805,
+Q1,AO3400A,SOT-23,
+D1,SS14,SOD-123,
+R16,100R,R_0805,
+R17,100k,R_0805,
+Q2,AO3400A,SOT-23,
+D2,SS14,SOD-123,
+R18,1k,R_0805,
+D3,LED_GREEN,LED_0805,
+H1,MountingHole_2.5mm,MountingHole,
+H2,MountingHole_2.5mm,MountingHole,
+H3,MountingHole_2.5mm,MountingHole,
+H4,MountingHole_2.5mm,MountingHole,

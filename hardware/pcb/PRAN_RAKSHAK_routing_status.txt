@@ -1,0 +1,23 @@
+PRELIMINARY ROUTING STATUS - Not a KiCad DRC Report
+Board 52 x 88 mm; footprints: 49; net labels: 27; copper segments: 168; vias: 8
+Routing attempts completed before conservative short-risk cleanup: 46, failed: 19
+Routes intentionally removed after spacing cross-check: CH4_AIN, EN, MOTOR_GATE_SRC, SCL, VBAT_RAW
+UNROUTED: ('DUST_AIN', 'U2', 'R12')
+UNROUTED: ('DUST_AIN', 'U2', 'R13')
+UNROUTED: ('DUST_AIN', 'U2', 'C7')
+UNROUTED: ('MOTOR_GATE', 'R14', 'R15')
+UNROUTED: ('MOTOR_GATE', 'R14', 'Q1')
+UNROUTED: ('PANIC', 'U1', 'J8')
+UNROUTED: ('PANIC', 'U1', 'R5')
+UNROUTED: ('SCL', 'U1', 'U2')
+UNROUTED: ('SCL', 'U1', 'R4')
+UNROUTED: ('SDA', 'U1', 'J6')
+UNROUTED: ('SDA', 'U1', 'J7')
+UNROUTED: ('SDA', 'U1', 'U2')
+UNROUTED: ('SDA', 'U1', 'R3')
+UNROUTED: ('3V3', 'U1', 'J4')
+UNROUTED: ('3V3', 'U1', 'J9')
+UNROUTED: ('3V3', 'U1', 'J10')
+UNROUTED: ('3V3', 'U1', 'U2')
+UNROUTED: ('3V3', 'U1', 'D1')
+UNROUTED: ('3V3', 'U1', 'D2')
